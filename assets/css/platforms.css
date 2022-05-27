@@ -242,6 +242,24 @@
     margin-left: 2rem;
     color: var(--white);
 }
+.card_email__terminos input{
+    margin-top: -.2rem;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+.card_email__terminos input:checked{
+    background-color: #606060;
+}
+.card_email__terminos span{
+    margin-left: .4rem;
+}
 .card_email__form_btn{  
     position: absolute; 
     left: 0; 
