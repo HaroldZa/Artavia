@@ -1,0 +1,66 @@
+
+  main#carousel {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 3;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  div.item {
+    position: absolute;
+    width: 300px;
+    --r: calc(var(--position) - var(--offset));
+    transition: all 0.25s linear;
+    transform: translateX(calc(-350px * var(--r)));
+  }
+
+  .slider__btn{
+      text-align: center;
+      margin-top: 53rem;
+  }
+  .slider__icon{
+      width: 6rem;
+  }
+  div.item:nth-of-type(1) {
+    --offset: 1;
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+  }
+
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
