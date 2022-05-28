@@ -1,24 +1,5 @@
 /* Hero content */
-.hero{
-    background: url(../images/h_21.png) no-repeat; 
-    background-size: 100% 100%;
-    background-position: center bottom;
-}
-.hero__info{
-    padding: 5rem 0 10rem 0;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    color: var(--white);
-}
-.hero__title{
-    font-size: 5.4rem;
-    font-weight: 800;
-}
-.hero__paragraph{
-    margin: 0;
-    font-size: 3.7rem;
-}
+
 
 /* Platforms */
 .platforms{
@@ -58,7 +39,11 @@
     color: #606060;
 }
 .highlights__paragraph{
+    line-height: 1.2;
     color: #606060;
+}
+.highlights__paragraph span{
+    display: block;
 }
 .highlights__cards{
     display: grid;
