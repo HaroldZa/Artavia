@@ -73,25 +73,30 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    
-    align-items: center;
     padding: 4rem 2rem;
     -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5); 
     box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5);
     text-align: center;
-    width: 85%;
+    max-width: 85%; 
     background-color: var(--white);
+}
+.card__box{
+    max-width: 100%;
 }
 .card__box:nth-child(1){
     padding-right: 2rem;
     border-right: 1px solid rgba(96, 96, 96, .1);
 }
 .card__title{
+    display: flex;
+    align-items: center;
+    height: 10vh;
     font-size: 2.7rem;
     font-weight: bold;
     color: #F3487D;
 }
 .card__paragraph{
+    color: #606060;
     line-height: 1.3;
 }
 /* Card step */
