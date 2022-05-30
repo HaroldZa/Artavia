@@ -1,0 +1,206 @@
+/* Hero */
+.hero__paragraph{
+    font-size: 2.6rem;
+}
+.hero__paragraph span{
+    display: block;
+    line-height: .4;
+    font-weight: 800;
+}
+/* Card */
+.card{
+    margin-top: -5.3rem;
+}
+.card__content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    width: 87%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    background-color: var(--white);
+}
+.card__text{
+    padding: 6rem 2.3rem 1.5rem 3.5rem;
+}
+.card__subtext{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #B3B3B3;
+}
+.card__title{
+    margin-top: 1rem;
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: #F73A7E;
+    width: 85%;
+}
+.card__title span{
+    display: block;
+}
+.card__paragraph{
+    white-space: pre-line;
+    line-height: 1.2;
+    font-size: 1.8rem;
+    color: #999999;
+}
+.card__img_content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #2AD9E9;
+}
+.card__text_icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3.5rem;
+}
+.card__text_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.card__text_icon span{
+    display: block;
+}
+.card__text_icon_title{
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #606060;
+}
+/* Tools */
+.tools{
+    position: relative;
+    text-align: center;
+    margin-top: 7rem;
+}
+.tools__title{
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: #F73A7E;
+}
+.tools__img{
+    margin-top: 6rem;
+    position: absolute;
+    left: 4rem;
+    width: 90%;
+}
+
+/* strengths  */
+.strengths{
+    margin-top: 54rem;
+}
+.strengths__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 87%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.30);
+    background-color: var(--white);
+}
+.strengths__img{
+    height: 100%;
+}
+.strengths__text{
+    padding: 4rem 3rem 4rem 3rem;
+}
+.strengths__subtext{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #B3B3B3;
+}
+.strengths__title{
+    margin-top: 1rem;
+    width: 90%;
+    font-size: 3.9rem;
+    font-weight: 800;
+    color: #F73A7E;
+}
+.strengths__paragraph{
+    font-size: 1.8rem;
+    color: #999999;
+    line-height: 1.2;
+}
+.strengths__icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.strengths__icon{
+    margin-top: 2rem;
+}
+.strengths__icon_text{
+    font-size: 1.8rem;
+    color: #B3B3B3;
+    line-height: 1;
+}
+.strengths__icon span{
+    display: block;
+}
+/* FAQ */
+.faq{
+    margin-top: 4rem;
+}
+.faq__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.faq__back{
+    font-size: 11.3rem;
+    font-weight: 100;
+    color: #E6E6E6;
+}
+.faq__title{
+    font-size: 3.9rem;
+    position: absolute;
+    top: 4.5rem;
+    margin: 0 auto;
+    color: #F3487D;
+    font-weight: 800;
+}
+.faq__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.faq__single{
+    padding: 2rem 3rem;
+    box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
+    border-radius: 20px;
+}
+.faq__single_top,
+.faq__multi_single{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq__single_title{
+    font-size: 2.2rem;
+    color: #6E62E8;
+}
+.faq__single_icon,
+.faq__multi_icon{
+    width: 3rem;
+}
+.faq__multi_single{
+    margin: 1rem 0 1.8rem 0;
+}
+.faq__single__text{
+    line-height: 1.2;
+    color: #606060;
+}
+.faq__multi_title{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #606060;
+    padding-right: 1rem;
+}
