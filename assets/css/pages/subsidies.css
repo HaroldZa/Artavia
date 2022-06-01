@@ -415,6 +415,7 @@
     padding: 1rem;
     border: none;
     border-bottom: 1.5px solid rgba(96, 96, 96, .2);
+    outline:none
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
