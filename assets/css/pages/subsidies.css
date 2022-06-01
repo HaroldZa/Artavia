@@ -201,8 +201,10 @@
 }
 .cards__card_title{
     margin-top: -1.5rem;
+    margin-bottom: 1rem;
     font-size: 2.2rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 .cards__card_paragraph{
     margin: 0;
