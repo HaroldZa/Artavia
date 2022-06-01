@@ -63,6 +63,7 @@ img {
     background: url(../images/h_21.png) no-repeat; 
     background-size: cover;
     background-position: center bottom;
+    margin-top: -1rem;
 }
 .hero__info{
     padding: 5rem 0 10rem 0;
