@@ -45,7 +45,7 @@
     font-size: 1.8rem;
     color: #999999;
 }
-@media (min-width: 769px){
+@media (min-width: 1161px){
     .card__img_content{
         background-color: #2AD9E9;
     }
@@ -198,20 +198,7 @@
     display: none;
 }
 
-@media (max-width: 768px){
-    .container{
-        width: 100% !important;
-    }
-    .mobile{
-        display: grid;
-    }
-    .desktop{
-        display: none;;
-    }
-    /* Hero */
-    .hero__paragraph{
-        font-size: 1.8rem;
-    }
+@media (max-width: 1160px){
     /* Card */
     .card__content{
         width: 100%;
@@ -228,6 +215,26 @@
     }
     .card__paragraph{
         font-size: 1.9rem;
+    }
+    .processes__cards{
+        margin-top: -4rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100% !important;
+    }
+    .mobile{
+        display: grid;
+    }
+    .desktop{
+        display: none;;
+    }
+    /* Hero */
+    .hero__paragraph{
+        font-size: 1.8rem;
     }
     /* Tools */
     .tools{
@@ -251,7 +258,6 @@
         font-size: 3.9rem;
     }
     .processes__cards{
-        margin-top: -5rem;
         grid-template-columns: repeat(2, 1fr);
     }
     /* FAQ */
