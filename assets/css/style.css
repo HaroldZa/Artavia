@@ -77,7 +77,9 @@ img {
     font-weight: 800;
 }
 .hero__paragraph{
-    margin: 0;
+    margin: 2rem auto 0 auto;
+    width: 80%;
+    line-height: 1.2;
     font-size: 3.7rem;
 }
 .hero__bar{
@@ -98,6 +100,7 @@ img {
     float: left;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 .hero__nav ul ul {
     display: none;
@@ -320,6 +323,10 @@ img {
 }
 
 @media (max-width: 990px){
+    .hero__info{
+        width: 80%;
+        margin: 8rem auto 0 auto;
+    }
     .sidenav {
         display: block;
         height: 100%; 
@@ -355,11 +362,6 @@ img {
         margin-left: 50px;
       }
       
-      
-      @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-      }
       .hero__nav{
           display: none;
       }
@@ -382,4 +384,36 @@ img {
     .container{
         width: 100%;
     }
+}
+
+@media (max-width: 768px){
+    .hero__title{
+        font-size: 2.8rem;
+    }
+    .hero__paragraph{
+        margin: 2rem auto 0 auto;
+        width: 70%;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .hero__info{
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px){
+    .hero__info{
+        width: 90%;
+    }
+    .hero__paragraph{
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .hero__info{
+        width: 95%;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }

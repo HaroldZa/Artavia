@@ -1,9 +1,8 @@
 /* Hero */
-.hero__paragraph{
-    font-size: 3.3rem;
-    margin: 2rem auto 0 auto;
-    width: 80%;
-    line-height: 1.2;
+@media (min-width: 768px){
+    .hero__paragraph{
+        font-size: 3.3rem;
+    }
 }
 .platforms{
     display: flex;
@@ -212,10 +211,6 @@
     .container{
         width: 100% !important;
     }
-    .hero__info{
-        width: 80%;
-        margin: 8rem auto 0 auto;
-    }
     .highlights__cards{
         padding: 0 2rem;
         grid-template-columns: repeat(2, 1fr);
@@ -261,16 +256,6 @@
     .desktop{
         display: none;;
     }
-    /* Hero */
-    .hero__title{
-        font-size: 2.8rem;
-    }
-    .hero__paragraph{
-        margin: 2rem auto 0 auto;
-        width: 50%;
-        font-size: 2rem;
-        line-height: 1.2;
-    }
     /* Platforms */
     .platforms__img{
         width: 100%;
@@ -304,14 +289,6 @@
     }
 }
 
-@media (max-width: 600px){
-    .hero__info{
-        width: 95%;
-    }
-    .hero__paragraph{
-        width: 90%;
-    }
-}
 
 @media (max-width: 490px){
     .highlights__cards{

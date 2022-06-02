@@ -1,9 +1,8 @@
 /* Hero */
-.hero__paragraph{
-    margin: 2rem auto 0 auto;
-    font-size: 1.8rem;
-    width: 80%;
-    line-height: 1.2;
+@media (min-width: 768px){
+    .hero__paragraph{
+        font-size: 1.8rem;
+    }
 }
 /* Card main */
 .card_main,

@@ -1,9 +1,8 @@
-/* Hero */
-.hero__paragraph{
-    font-size: 2.6rem;
-    margin: 2rem auto 0 auto;
-    width: 80%;
-    line-height: 1.2;
+@media (min-width: 768px){
+    /* Hero */
+    .hero__paragraph{
+        font-size: 2.6rem;
+    }
 }
 
 /* Platforms */
@@ -279,10 +278,6 @@
     .container{
         width: 100% !important;
     }
-    .hero__info{
-        width: 80%;
-        margin: 8rem auto 0 auto;
-    }
     .main__box{
         display: flex;
         flex-direction: column;
@@ -366,15 +361,6 @@
     .desktop{
         display: none;;
     }
-    .hero__title{
-        font-size: 2.8rem;
-    }
-    .hero__paragraph{
-        margin: 2rem auto 0 auto;
-        width: 70%;
-        font-size: 2rem;
-        line-height: 1.2;
-    }
     /* Platforms */
     .platforms__img{
         width: 100%;
@@ -397,12 +383,6 @@
 }
 
 @media (max-width: 600px){
-    .hero__info{
-        width: 95%;
-    }
-    .hero__paragraph{
-        width: 90%;
-    }
     .card{
         padding: 5rem 2rem;
     }
@@ -414,5 +394,18 @@
     }
     .main__text{
         width: 98%;
+    } 
+}
+
+@media (max-width: 450px){
+    .card_steps{
+        margin-top: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card_steps__step{
+        padding-top: 2rem;
+    }
+    .works{
+        padding-top: 40rem;
     }
 }
