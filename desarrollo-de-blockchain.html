@@ -7,6 +7,7 @@
     <title>Blockchain</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components/slider.css">
     <link rel="stylesheet" href="assets/css/pages/blockchain.css">
 </head>
 <body>
@@ -71,7 +72,8 @@
     </header>
 
     <section class="card_main container">
-        <img class="card_main__img" src="assets/images/h_22.png" alt="">
+        <img class="card_main__img desktop" src="assets/images/h_22.png" alt="">
+        <img class="card_main__img mobile" src="assets/images/bc-img1_r.png" alt="">
         <div class="card_main__text">
             <span class="card_main__subtext">¿En que podemos ayudarte?</span>
             <h3 class="card_main__title">Nuestros puntos fuertes</h3>
@@ -106,7 +108,8 @@
     </section>
 
     <section class="card_secondary container">
-        <img class="card_main__img" src="assets/images/h_23.png" alt="">
+        <img class="card_main__img desktop" src="assets/images/h_23.png" alt="">
+        <img class="card_main__img mobile" src="assets/images/img_38.png" alt="">
         <div class="card_main__text">
             <span class="card_main__subtext">¿Que Utilizamos?</span>
             <h3 class="card_main__title">Desarrollos sin fronteras</h3>
@@ -143,7 +146,7 @@
         </div>
     </section>
 
-    <section class="card_steps">
+    <section class="card_steps desktop">
         <div class="card_steps__step"></div>
         <div class="card_steps__step"></div>
         <div class="card_steps__step"></div>
@@ -189,8 +192,8 @@
                     <p class="card__paragraph">Es importante definir el concepto y lanzarlo para saber la aceptación con un
                         grupo de personas, para posteriormente ir creciendo el proyecto de tal forma
                         que conozcas las nuevas.</p>
-                    </div>
-                    <div class="card__img"></div>
+                </div>
+                <div class="card__img"></div>
             </div>
             <div class="card">
                 <div class="card__content border_right">
@@ -214,8 +217,8 @@
         </div>
     </main>
 
-    <section class="card_work">
-        <div class="card_work__content container desk">
+    <section class="card_work desktop">
+        <div class="card_work__content container desk desktop">
             <div class="card_work__card">
                 <img class="card_work__icon" src="assets/images/icons/img_45.png" alt="">
                 <h3 class="card_work__title">Fiabilidad</h3>
@@ -231,6 +234,32 @@
                 <h3 class="card_work__title">Asesoramiento</h3>
                 <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
             </div>
+        </div>
+        <div class="mobile desktop">
+            <input type="radio" name="position" />
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <main class="card_work__content" id="carousel">
+                <div class="item card_work__card">
+                    <img class="card_work__icon" src="assets/images/icons/img_45.png" alt="">
+                <h3 class="card_work__title">Fiabilidad</h3>
+                <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
+                </div>
+                <div class="item card_work__card">
+                    <img class="card_work__icon" src="assets/images/icons/img_46.png" alt="">
+                    <h3 class="card_work__title">Soporte</h3>
+                    <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
+                </div>
+                <div class="item card_work__card">
+                    <img class="card_work__icon" src="assets/images/icons/img_47.png" alt="">
+                    <h3 class="card_work__title">Asesoramiento</h3>
+                    <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
+                </div>
+                <main>
+                    <div class="slider__btn">
+                        <img class="slider__icon" src="assets/images/icons/f_1.png" alt="">
+                        <img class="slider__icon" src="assets/images/icons/f_2.png" alt="">
+                    </div>
         </div>
     </section>
 

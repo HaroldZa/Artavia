@@ -24,6 +24,7 @@
     position: relative;
 }
 .card_main__img{
+    height: 100%;
     width: 100%;
 }
 .card_main__text{
@@ -98,6 +99,7 @@
     margin: 0 auto;
     text-align: center;
     width: 70%;
+    line-height: 1.2;
 }
 .main__text_sub{
     text-transform: uppercase;
@@ -105,6 +107,7 @@
     color: #6F63E9;
 }
 .main__title{
+    margin-top: 1rem;
     font-size: 3.9rem;
     color: #F3487D;
     font-weight: 800;
@@ -114,70 +117,77 @@
     color: #606060;
 }
 .cards{
+    margin-top: 35rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8rem;
-    margin-top: 8rem;
+    gap: 6rem;
 }
 .card{
-    position: relative;
+    display: grid;
+    grid-auto-rows: 1fr;
+    margin-top: -32rem;
+}
+  .card__content {
     text-align: center;
     line-height: 1.2;
-    background: rgb(240, 240, 240);
-    border-radius: 3%;
-    border-bottom-right-radius: 8%;
-    border-bottom-left-radius: 8%;
-    height: 36.5rem;
-}
-.card__content{
-    display: inline-block;
-    border-radius: 3%;
-    padding: 1rem 4rem 0 4rem;
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 5rem 4rem 0 4rem;
     color: #606060;
     margin-top: 0.2rem;
     margin-bottom: -0.05rem;
-    width: 99%;
-    background-color: var(--white);
-    height: 35rem;
-}
-.card:nth-child(1),
-.card:nth-child(2),
-.card:nth-child(4),
-.card:nth-child(5),
-.border_right{
-    border-top-right-radius: 10%;
-    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
-}
-.card:nth-child(3),
-.card:nth-child(6),
-.border_left{
-    border-top-left-radius: 10%;
-    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
-}
+  }
+  
+  .card__content::before,
+  .card__content::after {
+    content: '';
+    top: 3rem;
+    left: 0;
+    border: 2px rgb(240, 240, 240) solid;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .card__content::before {
+    transform: skew(0, 1deg);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+  }
+  
+  .card:nth-child(3n) .card__content::before{
+    transform: skew(0, -1deg);
+  }
+
+  .card__content::after {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  }
+
 .card__title{
     font-size: 2.2rem;
     font-weight: 600;
     padding: 0 3rem;
 }
 .card__img{
-    margin-top: 0.2rem;
+    width: 100%;
+    margin-top: 3rem;
     background: url(../../images/red.png), url(../../images/purple.png);
     height: 1.5rem;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 90%;
-    background-color: var(--white);
 }
 /* Card work */
 .card_work{
+    margin-top: -24rem !important;
     background-image: url(../../images/h_24.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 10rem;
     color: var(--white);
     height: 42rem;
+    z-index: 0;
 }
 .card_work__content{
     margin-top: 20rem;
@@ -187,6 +197,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    z-index: 0;
 }
 .card_work__card{
     position: absolute;
@@ -217,16 +228,18 @@
 }
 .card_work__title{
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     padding-bottom: 5rem;
     font-weight: 800;
+    word-wrap: break-word;
 }
 .card_work__paragraph{
     line-height: 1.2;
     font-size: 1.5rem;
 }
+/* Contact */
 .contact{
-    margin-top: 6rem;
+    margin-top: 8rem;
     text-align: center;
 }
 .contact__title{
@@ -236,6 +249,7 @@
 }
 .contact__paragraph{
     color: #606060;
+    line-height: 1.2;
 }
 .contact__form{
     margin: 0 auto;
@@ -265,4 +279,134 @@
     bottom: -.25rem;
     right: 0;
     width: 5.5rem;
+}
+.mobile{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    .container{
+        width: 100% !important;
+    }
+    .mobile{
+        display: grid;
+    }
+    .desktop{
+        display: none;;
+    }
+    /* Card main */
+    .card_main,
+    .card_secondary{
+        grid-template-columns: repeat(1, 1fr);
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .card_main__img{
+        margin-top: 5rem;
+    }
+    .card_secondary > .card_main__img{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .card_main__text{
+        grid-row: 1;
+    }
+    .cards{
+        gap: 3rem;
+    }
+    /* Main */
+    .main{
+        margin-top: 10rem;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 990px){
+    .hero__info{
+        width: 90%;
+        margin: 8rem auto 0 auto;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 6rem;
+    }
+}
+
+@media (max-width: 768px){
+    /* Hero */
+    .hero__title{
+        font-size: 2.8rem;
+    }
+    .hero__paragraph{
+        margin: 2rem auto 0 auto;
+        width: 80%;
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    .main__text{
+        width: 80%;
+    }
+    .main__title{
+        font-size: 3.2rem;
+    }
+    /* Slider */
+    .card_work{
+        margin-bottom: 12rem;
+        padding-top: 5rem;
+    }
+    .card_work__content{
+        margin-top: -1rem;
+    }
+    .card_work__card:nth-child(1),
+    .card_work__card:nth-child(2),
+    .card_work__card:nth-child(3){
+        margin-top: 1rem;
+    }
+
+    /* Contact */
+    .contact{
+        padding: 0 2rem;
+    }
+    .contact__title{
+        font-size: 2.9rem;
+    }
+    .contact__paragraph{
+        padding: 1.5rem 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact__form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10rem;
+        padding: 0 8rem;
+    }
+    .main__text{
+        width: 95%;
+    }
+    .contact__paragraph{
+        width: 95%;
+    }
+}
+
+@media (max-width: 490px){
+    .cards{
+        padding: 0;
+    }
+    .card_main__icons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width: 350px){
+    .card_main__icons{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

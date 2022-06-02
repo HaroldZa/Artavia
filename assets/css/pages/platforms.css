@@ -87,6 +87,7 @@
 .card__title{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 10vh;
     font-size: 2.7rem;
     font-weight: bold;
@@ -212,6 +213,7 @@
 .card_email__subtitle{
     font-size: 3rem;
     margin: 0;
+    line-height: 1.2;
 }
 .card_email__form{
     position: relative;
@@ -251,7 +253,7 @@
     position: absolute; 
     left: 0; 
     right: 0; 
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: auto; 
     margin-right: auto; 
     border: none;
@@ -263,10 +265,202 @@
 }
 .card_email__form_icon{
     position: absolute;
-    margin-top: 1.7rem;
+    margin-top: 2.7rem;
     left: 14.8rem; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     width: 5rem;
+}
+.mobile{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    .container{
+        width: 100% !important;
+    }
+    .faq{
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 990px){
+    .hero__info{
+        width: 80%;
+        margin: 8rem auto 0 auto;
+    }
+    .highlights__cards{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+    /* Card */
+    .card__content{
+        display: block;
+        max-width: 100%;
+        padding: 0 2rem;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 4rem;
+    }
+    /* Steps */
+    .card_steps{
+        margin-top: 0rem;
+        position: static;
+        height: .9rem;
+    }
+    .card_email__img{
+        width: 42%;
+        height: 110%;
+    }
+    /* FAQ */
+    .faq{
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .faq__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .faq__multi{
+        padding: 0 2rem;
+        grid-row: 1;
+    }
+    .faq__single{
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        border-radius: 0px;
+    }
+    .faq__multi_title{
+        font-size: 1.7rem;
+    }
+    .faq__single_title{
+        font-size: 2rem;
+    }
+    .faq__single__text{
+        font-size: 1.5rem;
+    }
+    .faq__title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .mobile{
+        display: grid;
+    }
+    .desktop{
+        display: none;;
+    }
+    /* Hero */
+    .hero__title{
+        font-size: 2.8rem;
+    }
+    .hero__paragraph{
+        margin: 2rem auto 0 auto;
+        width: 50%;
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    
+    .card_email__img{
+        width: 35%;
+        height: auto;
+    }
+    /* Platforms */
+    .platforms__img{
+        width: 100%;
+    }
+
+    /* highlights */
+    .highlights__text{
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .highlights__title{
+        margin-top: 2rem;
+        font-size: 2.4rem;
+    }
+    .highlights__paragraph span{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .highlights__cards{
+        margin-top: 3rem;
+    }
+    .highlights__card_title{
+        font-size: 1.9rem;
+    }
+    .highlights__card_paragraph{
+        font-size: 1.4rem;
+    }
+
+    /* Card email */
+    .card_email{
+        display: block;
+        margin-top: 35rem;
+        margin-bottom: -2rem;
+        border-radius: 0;
+    }
+    .card_email__img{
+        position: absolute;
+        top: -81%;
+        left: 60%;
+        width: auto;
+    }
+    .card_email__text,
+    .card_email__form{
+        padding: 0 3rem;
+    }
+    .card_email__title{
+        font-size: 3.3rem;
+    }
+    .card_email__subtitle{
+        font-size: 2.5rem;
+    }
+    .card_email__form_text{
+        padding-right: 2rem;
+        width: 100%;
+    }
+    .card_email__form_btn{
+        padding: 1rem 3rem;
+        width: 21rem;
+    }
+    .card_email__form_icon{
+        margin-top: 2.3rem;
+        left: 16rem;
+        width: 6rem;
+    }
+}
+
+@media (max-width: 600px){
+    .card_email__img{
+        left: 50%;
+    }
+    .hero__info{
+        width: 95%;
+    }
+    .hero__paragraph{
+        width: 90%;
+    }
+}
+@media (max-width: 490px){
+    .card_email__img{
+        left: 45%;
+    }
+    .hero__info{
+        width: 90%;
+        margin: 8rem auto 0 auto;
+    }
+    .highlights__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+@media (max-width: 450px){
+    .card_email__img{
+        left: 38%;
+    }
 }
