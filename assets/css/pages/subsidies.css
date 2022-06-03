@@ -539,7 +539,7 @@ input[type=number] {
         display: flex;
         position: absolute;
         right: 18%;
-        top: -0.2%;
+        top: -0.6%;
     }
     .main__btn_left,
     .main__btn_right{
@@ -644,6 +644,9 @@ input[type=number] {
     .contact__conten{
         margin-top: 45rem;
     }
+    .main__btn_slider{
+        right: 10%;
+    }
     .reviews__paragraph{
         text-align: center;
         width: 100%;
@@ -671,6 +674,9 @@ input[type=number] {
        font-size: 1.5rem;
        padding: 1rem;
     }
+    .main__btn_slider{
+        right: 0;
+    }
 }
 
 @media (max-width: 390px){
@@ -679,5 +685,13 @@ input[type=number] {
     }
     .cards_main__card_button a{
         font-size: 1.2rem;
+    }
+    .main__btn_slider{
+        display: flex;
+        justify-content: center;
+        top: -3.5%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
     }
 }
