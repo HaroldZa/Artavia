@@ -305,10 +305,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    
+}
+.reviews__cards{
+    grid-column: 2/4;
 }
 .reviews__text{
     margin: 0 auto;
+    padding-bottom: 2rem;
 }
 .reviews__paragraph{
     color: var(--white);
@@ -326,12 +329,12 @@
     padding: 2.5rem 10rem;
     background: linear-gradient(90deg, rgba(247,58,126,1) 0%, rgba(254,96,67,1) 100%);
 }
-.reviews__cards{
-    margin: 12rem 0;
-    grid-column: 2/4;
+.reviews__cards_mobile{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin: 12rem 0;
+    grid-column: 2/4;
 }
 .reviews__card{
     background-color: var(--white);
@@ -466,28 +469,48 @@ input[type=number] {
         position: relative;
         background-position: right;
         background-size: 100% 100%;
+        height: 35rem;
     }
     .reviews__content{
-        margin: 0 auto;
-        width: 50%;
         grid-template-columns: 1fr;
-        padding-top: 2rem;
-        padding-bottom: 7rem;
+        place-content: center;
+        height: 100%;
+    }
+    .reviews__cards{
+        position: absolute;
+        overflow-y: auto;
+        margin: 0 auto;
+        top: 30rem;  
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;    
+        justify-content: space-evenly;
+        height: 40rem;
+    }
+    .reviews__cards_mobile{
+        position: absolute;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .reviews__btn{
         border: 1px solid rgba(255, 255, 255, .2);
     }
-    .reviews__cards_mobile{
-        position: absolute;
-        padding: 0 2rem;
-        left: 0;
-        top: 110%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+    .reviews__text{
+        margin: 0 auto;
     }
-
+    .reviews__card{
+        margin: 0;
+        padding: 0;
+        width: 36rem;
+        height: 26rem;
+        object-fit: cover;
+        border: 1px solid #606060;
+    }
     /* Contact */
     .contact{
         margin-top: 35rem;
@@ -568,6 +591,9 @@ input[type=number] {
 @media (max-width: 768px){
     .container{
         width: 100% !important;
+    }
+    .reviews__cards{
+        justify-content: normal;
     }
     /* Cards main */
     .cards_main__card_img{
