@@ -294,6 +294,10 @@
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
     }
+    .card__box:nth-child(1){
+        padding-right: 0;
+        border-right: 0;
+    }
     /* Card */
     .card__content{
         display: block;
@@ -425,11 +429,12 @@
         width: 100%;
     }
     .card_email__form_btn{
+        margin-top: 5rem;
         padding: 1rem 3rem;
         width: 21rem;
     }
     .card_email__form_icon{
-        margin-top: 2.3rem;
+        margin-top: 4.4rem;
         left: 16rem;
         width: 6rem;
     }
@@ -461,6 +466,29 @@
 }
 @media (max-width: 450px){
     .card_email__img{
-        left: 38%;
+        left: 34%;
+    }
+    .card_email__form_btn{
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+        width: 21rem;
+    }
+    .card_email__form_icon{
+        margin-top: 1.4rem;
+        left: 16rem;
+        width: 6rem;
+    }
+}
+
+@media (max-width: 360px){
+    .card_email{
+        padding-bottom: 55rem;
+    }
+    .card_email__img{
+        top: -67.5%;
+        left: 10%;
+    }
+    .card__icon{
+        margin-top: 4rem;
     }
 }
