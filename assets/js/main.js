@@ -16,6 +16,26 @@ for (i = 0; i < title.length; i++) {
 });
 }
 
+
+var submenu = document.getElementsByClassName("submenu");
+const submenu1    = document.querySelector('.menu__submenu');
+ var j;
+var id;
+
+for (j = 0; j < submenu.length; j++) {
+    submenu[j].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        submenu1.classList.toggle("tran");
+    } else {
+        content.style.display = "block";
+        submenu1.classList.toggle("tran");
+    }
+});
+}
+
 document.querySelectorAll(".footer__title_top").forEach(el => {
     el.addEventListener("click", e => {
     this.id = e.target.getAttribute("id");
@@ -38,7 +58,7 @@ document.querySelectorAll(".footer__title_top").forEach(el => {
     });
   });
 
-  document.querySelectorAll(".hero__bar_menu").forEach(el => {
+/*   document.querySelectorAll(".hero__bar_menu").forEach(el => {
     el.addEventListener("click", e => {
     this.id = e.target.getAttribute("id");
     console.log(e)
@@ -49,7 +69,19 @@ document.querySelectorAll(".footer__title_top").forEach(el => {
     document.getElementById("mySidenav").style.width = "270px";
   }
   
-  /* Set the width of the side navigation to 0 */
+  /* Set the width of the side navigation to 0
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-  } 
+  }  */
+
+const toggler = document.querySelector('.menu__toggler');
+const menu    = document.querySelector('.menu');
+
+/*
+ * Toggles on and off the 'active' class on the menu
+ * and the toggler button.
+ */
+toggler.addEventListener('click', () => {
+  toggler.classList.toggle('active');
+  menu.classList.toggle('active');
+})
