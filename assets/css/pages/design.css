@@ -1,9 +1,8 @@
-/* Hero */
-.hero__paragraph{
-    margin: 2rem auto 0 auto;
-    font-size: 1.8rem;
-    width: 80%;
-    line-height: 1.2;
+@media (min-width: 768px){
+    /* Hero */
+    .hero__paragraph{
+        font-size: 1.8rem;
+    }
 }
 
 /* Card design */
@@ -54,30 +53,34 @@
     font-weight: 800;
     color: #7A58F7;
 }
-.card__content_deg{
-    margin-top: 8rem;
-    position: absolute;
-    background-image: url(../../images/bg_h_36_.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center bottom;
-    width: 100%;
-    height: 78rem;
-}
-.main__content_bg{
-    position: relative;
-    background-image: url(../../images/h_36_.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center bottom;
-    color: var(--white);
-    height: 78rem;
+@media (min-width: 1201px){
+    .card__content_deg{
+        margin-top: 8rem;
+        position: absolute;
+        background-image: url(../../images/bg_h_36_.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center bottom;
+        width: 100%;
+        height: 78rem;
+    }
+    .main__content_bg{
+        position: relative;
+        background-image: url(../../images/h_36_.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center bottom;
+        color: var(--white);
+        height: 78rem;
+    }
+    .main__cards{
+        position: absolute;
+    }
 }
 .main__cards_container{
     position: relative;
 }
 .main__cards{
-    position: absolute;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -107,9 +110,10 @@
 .main__card_title{
     font-size: 2.2rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 .main__card_paragraph{
-    margin: 0;
+    margin: 1rem 0 0 0;
     line-height: 1.2;
     padding: 0 0 2rem 0;
 }
@@ -125,7 +129,8 @@
 }
 .main__img{
     background-color: var(--white);
-    width: 48%;
+    width: 57.6rem;
+    height: 57rem;
     margin-top: 5rem;
     box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.30);
     -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.30);
@@ -221,4 +226,157 @@
     font-weight: 400;
     color: #606060;
     padding-right: 1rem;
+}
+
+@media (max-width: 1200px){
+    .main__content_bg{
+        position: relative;
+    }
+    .main__cards{
+        margin-top: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        color: var(--white);
+    }
+    .main__img__content{
+        margin-top: 32rem;
+        position: absolute;
+        left: 0;
+        background-image: url(../../images/bg_h_36_.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        width: 100%;
+        height: 40rem;
+        transform: rotate(180deg);
+        padding-top: 2rem;
+    }
+    .main__img{
+        position: static;
+        transform: rotate(-180deg);
+        
+    }
+    .main__paragraph{
+        color: #606060;
+        width: 80%;
+        padding-top: 7rem;
+    }
+    .works{
+        margin-top: 80rem;
+    }
+}
+
+@media (max-width: 990px){
+    .card_design{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .main__cards_container{
+        padding: 0 2rem;
+    }
+    /* Works */
+    .works__cards{
+        grid-template-columns: repeat(2, 1fr);
+        height: 20rem;
+    }
+    .works__card{
+        height: 25rem;
+    }
+    .works__card:nth-child(1){
+        display: none;
+    }
+    .works__card:nth-child(4){
+        grid-column: 1/3;
+    }
+    /* FAQ */
+    .faq{
+        margin-top: 37rem;
+        padding: 0;
+    }
+    .faq__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .faq__multi{
+        padding: 0 2rem;
+        grid-row: 1;
+    }
+    .faq__single{
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 768px){
+    /* Card design */
+    .card_design{
+        padding: 4rem;
+    }
+    .card_design__title{
+        color: #F73A7E;
+        width: 61%;
+        margin: 0 auto;
+    }
+    .card_design__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Main */
+    .main__title{
+        width: 80%;
+        font-size: 3rem;
+        color: #606060;
+    }
+    .main__cards_container{
+        padding: 0;
+    }
+    .main__cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main__card_paragraph{
+        padding: 0 3rem 2rem 3rem;
+    }
+    .faq__title{
+        text-align: center;
+        font-size: 4rem;
+        color: #606060;
+    }
+}
+
+@media (max-width: 600px){
+    /* Card design */
+    .card_design__title{
+        width: 90%;
+    }
+    .card_design__cards,
+    .main__cards{
+        grid-template-columns: 1fr;
+    }
+    .main__cards{
+        
+    }
+    .main__img{
+        margin-top: 0;
+        width: 50rem;
+        height: auto;
+    }
+    .main__img__content{
+        height: 30rem;
+    }
+}
+
+@media (max-width: 490px){
+    .card_design{
+        padding: 2rem 0;
+    }
+    .main__img{
+        margin-top: 0;
+        width: 40rem;
+        height: auto;
+    }
+    .main__img__content{
+        margin-top: 16rem;
+    }
+    .works{
+        margin-top: 50rem;
+    }
 }
