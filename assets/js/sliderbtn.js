@@ -23,7 +23,6 @@ back.addEventListener("click", function () {
         it2.classList.add('first');
         it3.classList.add('first');
         document.getElementById('back').style.display = 'none';
-        document.getElementById('go').style.display = 'block';
 
         it1.classList.remove('second');
         it2.classList.remove('second');
@@ -34,6 +33,7 @@ back.addEventListener("click", function () {
         it1.classList.add('second');
         it2.classList.add('second');
         it3.classList.add('second');
+        document.getElementById('go').style.display = 'block';
 
         it1.classList.remove('last');
         it2.classList.remove('last');
