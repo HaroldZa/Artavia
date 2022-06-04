@@ -307,6 +307,7 @@
     }
     .main__img{
         margin: 0 auto;
+        height: auto;
     }
     .card p{
         position: static;

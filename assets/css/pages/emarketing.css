@@ -250,6 +250,7 @@
 }
 .info__img{
     padding-top: 7rem;
+    height: auto;
 }
 .info__text{
     padding: 10rem 3rem;
@@ -385,7 +386,7 @@
         display: grid;
     }
     .info__img{
-        height: 28.6rem;
+        
     }
     .container{
         width: 100% !important;
