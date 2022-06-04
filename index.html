@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pages/home.css">
-    <link rel="stylesheet" href="assets/css/components/slider.css">
 </head>
 
 <body>
@@ -168,58 +167,32 @@
         </div>
     </main>
 
-    <section class="card_work desktop">
-        <div class="card_work__content container desk">
-            <div class="card_work__card">
-                <img class="card_work__icon" src="assets/images/icons/h_37.png" alt="">
-                <h3 class="card_work__title">Metodología de trabajo</h3>
-                <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
-                    esto garantiza la satisfacción de nuestros clientes</p>
+    <section class="card_work">
+            <main class="card_work__content container" id="carousel">
+                <div id="it1" class="item card_work__card first">
+                    <img class="card_work__icon" src="assets/images/icons/h_37.png" alt="">
+                    <h3 class="card_work__title">Metodología de trabajo</h3>
+                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
+                        esto garantiza la satisfacción de nuestros clientes</p>
+                </div>
+                <div id="it2" class="item card_work__card first">
+                    <img class="card_work__icon" src="assets/images/icons/h_38.png" alt="">
+                    <h3 class="card_work__title">Metodología de trabajo</h3>
+                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
+                        esto garantiza la satisfacción de nuestros clientes</p>
+                </div>
+                <div id="it3" class="item card_work__card first">
+                    <img class="card_work__icon" src="assets/images/icons/h_39.png" alt="">
+                    <h3 class="card_work__title">Metodología de trabajo</h3>
+                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
+                        esto garantiza la satisfacción de nuestros clientes</p>
+                </div>
+            </main>
+            <div class="slider__btn card_work__mobile">
+                <img id="back" class="slider__icon" src="assets/images/icons/f_1.png" alt="">
+                <img id="go" class="slider__icon" src="assets/images/icons/f_2.png" alt="">
             </div>
-            <div class="card_work__card">
-                <img class="card_work__icon" src="assets/images/icons/h_38.png" alt="">
-                <h3 class="card_work__title">Metodología de trabajo</h3>
-                <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
-                    esto garantiza la satisfacción de nuestros clientes</p>
-            </div>
-            <div class="card_work__card">
-                <img class="card_work__icon" src="assets/images/icons/h_39.png" alt="">
-                <h3 class="card_work__title">Metodología de trabajo</h3>
-                <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
-                    esto garantiza la satisfacción de nuestros clientes</p>
-            </div>
-        </div>
-        
-            <div class="card_work__mobile">
-            <input type="radio" name="position"  />
-            <input type="radio" name="position" checked/>
-            <input type="radio" name="position" />
-        <main class="card_work__content" id="carousel">
-            <div class="item card_work__card">
-                        <img class="card_work__icon" src="assets/images/icons/h_37.png" alt="">
-                        <h3 class="card_work__title">Metodología de trabajo</h3>
-                        <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
-                            esto garantiza la satisfacción de nuestros clientes</p>
-            </div>
-            <div class="item card_work__card">
-                        <img class="card_work__icon" src="assets/images/icons/h_37.png" alt="">
-                        <h3 class="card_work__title">Metodología de trabajo</h3>
-                        <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
-                            esto garantiza la satisfacción de nuestros clientes</p>
-            </div>
-            <div class="item card_work__card">
-                        <img class="card_work__icon" src="assets/images/icons/h_37.png" alt="">
-                        <h3 class="card_work__title">Metodología de trabajo</h3>
-                        <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
-                            esto garantiza la satisfacción de nuestros clientes</p>
-            </div>
-        <main>
-        <div class="slider__btn">
-            <img class="slider__icon" src="assets/images/icons/f_1.png" alt="">
-            <img class="slider__icon" src="assets/images/icons/f_2.png" alt="">
-        </div>
-    </div>
-    </section>
+        </section>
     
     <section class="card_subwork container">
         <div class="card_subwork__content">
@@ -405,6 +378,7 @@
         </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>
