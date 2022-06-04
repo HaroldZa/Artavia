@@ -459,9 +459,67 @@ input[type=number] {
     .desktop{
         display: none;
     }
-    .cards__content{
+    .slider__btn {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 2%;
+        left: 65%;
+    }
+    /* Slider */
+    .main__cards{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .main__cards_card{
+        margin-top: 2rem;
+    }
+    #carousel {
+        width: 100%;
+        height: 130rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-style: preserve-3d;
+        perspective: 600px;
+        --items: 3;
+        --middle: 2;
+        --position: 1;
+        pointer-events: none;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    
+    }
+    .item {
+        position: absolute;
+        width: 100%;
+        --r: calc(var(--position) - var(--offset));
+        transition: all 0.25s linear;
+        transform: translateX(calc(-100% * var(--r)));
+    }
+    #it1{
+        --offset: 1;
+    }
+    
+    #it2{
+        --offset: 2;
+    }
+    
+    #it3 {
+        --offset: 3;
+    }
+    .first{
+        --position: 1;
+    }
+    .second{
+        --position: 2;
+    }
+    .last{
+        --position: 3;
     }
 
     /* Reviews */
@@ -532,15 +590,9 @@ input[type=number] {
     }
     .main{
         position: relative;
-        margin-top: 0;
+        margin-top: -2rem;
     }
     /* Btn slider */
-    .main__btn_slider{
-        display: flex;
-        position: absolute;
-        right: 18%;
-        top: -0.6%;
-    }
     .main__btn_left,
     .main__btn_right{
         width: 5rem;
@@ -640,12 +692,23 @@ input[type=number] {
     }
 }
 
+
+@media (max-width: 660px){
+    .slider__btn {
+        position: static;
+    }
+    .main__cards_card{
+        margin-top: -2rem;
+    }
+}
+
 @media (max-width: 600px){
+    #carousel{
+        height: 160rem;
+        margin-top: -10rem;
+    }
     .contact__conten{
         margin-top: 45rem;
-    }
-    .main__btn_slider{
-        right: 10%;
     }
     .reviews__paragraph{
         text-align: center;
@@ -654,6 +717,9 @@ input[type=number] {
     .reviews__btn{
         display: flex;
         justify-content: center;
+    }
+    .cards{
+        margin-top: -10rem;
     }
     .cards_main__card_button{
         width: 100%;
@@ -674,8 +740,15 @@ input[type=number] {
        font-size: 1.5rem;
        padding: 1rem;
     }
-    .main__btn_slider{
-        right: 0;
+}
+
+@media (max-width: 450px){
+    #carousel{
+        height: 180rem;
+        margin-top: -15rem;
+    }
+    .cards{
+        margin-top: -15rem;
     }
 }
 
@@ -686,12 +759,21 @@ input[type=number] {
     .cards_main__card_button a{
         font-size: 1.2rem;
     }
-    .main__btn_slider{
-        display: flex;
-        justify-content: center;
-        top: -3.5%;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
+    #carousel{
+        height: 200rem;
+        margin-top: -20rem;
+    }
+    .cards{
+        margin-top: -20rem;
+    }
+}
+
+@media (max-width: 350px){
+    #carousel{
+        height: 240rem;
+        margin-top: -30rem;
+    }
+    .cards{
+        margin-top: -30rem;
     }
 }

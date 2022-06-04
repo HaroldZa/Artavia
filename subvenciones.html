@@ -120,14 +120,14 @@
     </section>
 
     <main class="main container">
-        <div class="main__cards">
-            <div class="main__cards_card">
+        <div class="slider__btn mobile">
+            <img id="back" class="main__btn_left" src="assets/images/icons/i_44.png" alt="">
+            <img id="go" class="main__btn_right" src="assets/images/icons/i_45.png" alt="">
+        </div>
+        <div class="main__cards" id="carousel">
+            <div id="it1" class="item main__cards_card first">
                 <div class="main__top">
-                    <h4 class="main__title">Segmento I</h4>
-                    <div class="main__btn_slider mobile">
-                        <img class="main__btn_left" src="assets/images/icons/i_44.png" alt="">
-                        <img class="main__btn_right" src="assets/images/icons/i_45.png" alt="">
-                    </div>
+                    <h4 class="main__title">Segmento I</h4
                     <span class="main__subtitle">Pequeñas empresas de entre 10 y menos de 50 empleados.
                     </span>
                     <p class="main__text">Bono digital: <span>12.000€</span></p>
@@ -176,7 +176,7 @@
                 </div>
             </div>
 
-            <div class="main__cards_card desktop">
+            <div id="it2" class="item main__cards_card first">
                 <div class="main__top">
                     <h4 class="main__title">Segmento  II</h4>
                     <span class="main__subtitle">Pequeñas empresas de entre 10 y menos de 50 empleados.
@@ -227,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="main__cards_card desktop">
+            <div id="it3" class="item main__cards_card first">
                 <div class="main__top">
                     <h4 class="main__title">Segmento III</h4>
                     <span class="main__subtitle">Pequeñas empresas de entre 10 y menos de 50 empleados.
@@ -278,7 +278,6 @@
                 </div>
             </div>
         </div>
-        
     </main>
 
     <section class="cards container">
@@ -570,5 +569,6 @@
         </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sliderseg.js"></script>
 </body>
 </html>
