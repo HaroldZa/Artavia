@@ -393,12 +393,13 @@
     }
     
     .slider__icon{
-        width: 15rem;
+        width: 12rem;
     }
     #carousel {
         height: 55rem;
         width: 100%;
-        overflow-y: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
         position: relative;
         z-index: 0;
     }
