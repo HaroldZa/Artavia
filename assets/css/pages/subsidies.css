@@ -4,7 +4,9 @@
         font-size: 1.8rem;
     }
 }
-
+.ov{
+    overflow: hidden;
+}
 /* Cards main */
 .cards_main{
     margin-top: -5rem;
@@ -229,10 +231,10 @@
 
 /* FAQ */
 .faq{
-    text-align: center;
     margin-top: 4rem;
 }
 .faq__top{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;

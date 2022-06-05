@@ -4,6 +4,9 @@
         font-size: 2.6rem;
     } 
 }
+.ov{
+    overflow: hidden;
+}
 .hero__paragraph span{
     display: block;
     line-height: .4;
@@ -136,6 +139,7 @@
     margin-top: 6rem;
 }
 .faq__top{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
