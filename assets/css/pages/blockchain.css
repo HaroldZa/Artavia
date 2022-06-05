@@ -4,6 +4,12 @@
         font-size: 1.8rem;
     }
 }
+.card_main,
+.card_secondary,
+.main,
+.contact{
+    overflow: hidden;
+}
 /* Card main */
 .card_main,
 .card_secondary{

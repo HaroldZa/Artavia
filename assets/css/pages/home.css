@@ -3,6 +3,7 @@
     background: url(../../images/fondo_1.png) no-repeat; 
     background-size: cover;
     background-position: center bottom;
+    overflow: hidden;
 }
 .hero__infoh{
     display: flex;
@@ -95,16 +96,22 @@
 }
 /* Main */
 .cards{
-    margin-top: 35rem;
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 6rem;
-    row-gap: 3rem;
+    
+    overflow: hidden;
 }
 .card{
     display: grid;
     grid-auto-rows: 1fr;
-    margin-top: -32rem;
+    margin-top: 0;
+}
+.card:nth-child(4),
+.card:nth-child(5),
+.card:nth-child(6){
+    margin-top: calc(100% - 63rem);
 }
 .card__content {
     text-align: center;
@@ -156,6 +163,7 @@
 }
 /* Cards Work */
 .card_work{
+    overflow: hidden;
     color: var(--white);
 }
 .card_work__content{
@@ -211,12 +219,16 @@
         margin-top: 15rem;
         padding-left: 10rem;
         padding-right: 10rem;
+        overflow: hidden;
     }
     .card_steps{
         position: absolute;
         margin: -15rem auto 0 auto;
         z-index: 0;
     }
+}
+.card_subwork{
+    overflow: hidden;
 }
 .card_subwork__content{
     display: grid;
@@ -305,6 +317,7 @@
 }
 .card_email__content{
     padding: 7rem 0 1rem 0;
+    overflow: hidden;
 }
 .card_email__text{
     color: var(--white);
@@ -358,6 +371,7 @@
 /* FAQ */
 .faq{
     margin-top: 4rem;
+    overflow: hidden;
 }
 .faq__top{
     display: flex;
@@ -430,6 +444,10 @@
 }
 
 @media (max-width: 1000px){
+    .card:nth-child(3){
+        margin-top: calc(100% - 63rem);
+    }
+
     .first{
         --position: 1;
     }
@@ -644,6 +662,16 @@
 }
 
 @media (max-width: 600px){
+    .card:nth-child(2),
+    .card:nth-child(3),
+    .card:nth-child(4),
+    .card:nth-child(5),
+    .card:nth-child(6){
+        margin-top: calc(100% - 70rem);
+    }
+    .card:nth-child(1){
+        margin-top: 0;
+    }
     .hero__paragraphh{
         font-size: 2rem;
     }

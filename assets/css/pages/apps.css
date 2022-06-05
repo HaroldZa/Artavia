@@ -341,11 +341,11 @@
 }
 
 @media (max-width: 768px){
-    .mobile{
+    .mobile_c{
         display: grid;
     }
     .desktop{
-        display: none;;
+        display: none;
     }
     /* Platforms */
     .platforms__img{

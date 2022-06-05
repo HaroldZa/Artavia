@@ -1,3 +1,6 @@
+(window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  })();
 
 var title = document.getElementsByClassName("footer__title_top");
 var i;
