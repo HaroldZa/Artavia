@@ -4,40 +4,32 @@
 
 var title = document.getElementsByClassName("footer__title_top");
 var i;
-var id;
 
 for (i = 0; i < title.length; i++) {
-    title[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-        
-    }
-});
-}
+    title[i].addEventListener("click", function() {
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
 
 
-var submenu = document.getElementsByClassName("submenu");
-const submenu1    = document.querySelector('.menu__submenu');
- var j;
-var id;
+var coll = document.getElementsByClassName("submenu");
+var j;
 
-for (j = 0; j < submenu.length; j++) {
-    submenu[j].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        submenu1.classList.toggle("tran");
-    } else {
-        content.style.display = "block";
-        submenu1.classList.toggle("tran");
-    }
-});
-}
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
 
 document.querySelectorAll(".footer__title_top").forEach(el => {
     el.addEventListener("click", e => {
@@ -61,30 +53,11 @@ document.querySelectorAll(".footer__title_top").forEach(el => {
     });
   });
 
-/*   document.querySelectorAll(".hero__bar_menu").forEach(el => {
-    el.addEventListener("click", e => {
-    this.id = e.target.getAttribute("id");
-    console.log(e)
-    });
-  });  
-
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "270px";
-  }
-  
-  /* Set the width of the side navigation to 0
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }  */
-
 const toggler = document.querySelector('.menu__toggler');
 const menu    = document.querySelector('.menu');
 
-/*
- * Toggles on and off the 'active' class on the menu
- * and the toggler button.
- */
 toggler.addEventListener('click', () => {
   toggler.classList.toggle('active');
   menu.classList.toggle('active');
 })
+

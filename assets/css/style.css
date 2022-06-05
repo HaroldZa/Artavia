@@ -292,7 +292,10 @@ img {
     }
     .footer__nav,
     .footer__know_text{
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        margin: 0;
     }
     .footer__content_mobile{
         display: grid;
@@ -325,11 +328,17 @@ img {
     }
     .footer__icon,
     .footer__title_mobile,
-    .footer__nav,
-    .footer__know_text,
     .footer__direction{
         padding: .8rem 1.5rem;
     }
+    .footer__know_text{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .footer__nav ul{
+        padding: .8rem 1.5rem;
+    }
+
     .footer__nav{
         overflow: hidden;
     }
@@ -348,8 +357,11 @@ img {
 
     /* * MENU BUTTON */
     .menu__submenu{
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
     }
+    .submenu:after { content: ' »'; } 
     .menu__submenu li{
         padding: 0;
         list-style: none;
@@ -361,9 +373,6 @@ img {
     }
     .menu p a{
         color: var(--white);
-    }
-    .tran{
-        transition: padding linear 1s, border-width linear 1s;
     }
     .menu_logo{
         width: 15rem !important;
@@ -405,7 +414,7 @@ img {
     background: transparent;
 }
 .menu__toggler.active > span::before, .menu__toggler.active > span::after {
-    background: rgb(48, 48, 48);
+    background: #fff;
     top: 0;
 }
 .menu__toggler.active > span::before {
