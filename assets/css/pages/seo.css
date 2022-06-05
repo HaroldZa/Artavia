@@ -4,6 +4,9 @@
         font-size: 2.6rem;
     }
 }
+.ov{
+    overflow: hidden;
+}
 .hero__paragraph span{
     display: block;
     font-weight: 800;

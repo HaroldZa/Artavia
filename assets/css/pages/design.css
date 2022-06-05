@@ -5,6 +5,10 @@
     }
 }
 
+.ov{
+    overflow: hidden;
+}
+
 /* Card design */
 .card_design{
     margin-top: -5rem;

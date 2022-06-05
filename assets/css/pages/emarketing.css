@@ -6,6 +6,10 @@
     }
 }
 
+.ov{
+    overflow: hidden;
+}
+
 /* Card email */
 .card_email{
     margin-top: -6rem;   
