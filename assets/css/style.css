@@ -89,6 +89,8 @@ img {
     align-items: center;
     padding-top: 2.2rem;
 }
+
+
 .hero__nav ul{
     display: flex;
     list-style: none;
@@ -102,6 +104,15 @@ img {
     margin: 0;
     padding: 0;
     z-index: 1;
+} 
+.hero__nav_items:hover{
+    color: rgba(255,255,255,0.5);   
+}
+.hero__subitems li a:hover{
+    color: #2a16df;   
+}
+.hero__subitems li:hover{
+    transform: scale(1.01);
 }
 .hero__nav ul ul {
     display: none;
@@ -115,6 +126,7 @@ img {
     box-shadow: inset 0 -1.5rem 1.5rem 0 rgb(205, 205, 205);
     margin-top: 2.3rem;
 }
+
 .sidenav{
     display: none;
     width: 0;
