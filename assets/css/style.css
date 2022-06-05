@@ -410,20 +410,19 @@ img {
 .menu {
     position: fixed;
     left: -30%;
-    bottom: 0;
+    top: 0;
     z-index: 998;
     color: #fff;
-    background: rgba(113, 98, 239, .9);
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    background: rgba(113, 98, 239, 1);
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: initial;
     transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
 }
 .menu.active {
     left: 0;
-    padding: 10rem;
+    padding: 10rem 10rem 0 10rem;
 }
 @media only screen and (max-width: 600px) {
     .menu {
@@ -432,8 +431,7 @@ img {
         padding: 50px;
    }
    .menu.active {
-    padding: 5rem;
-    
+    padding: 10rem 5rem 0 5rem;
     }
 }
 
