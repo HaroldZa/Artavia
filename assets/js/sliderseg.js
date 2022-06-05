@@ -42,7 +42,6 @@ back.addEventListener("click", function () {
 })
 
 go.addEventListener("click", function () {
-    console.log(array)
     if(array.indexOf('first') > 0){
         it1.classList.add('second');
         it2.classList.add('second');
@@ -64,4 +63,67 @@ go.addEventListener("click", function () {
 
         fill();
     }
+})
+
+function menu(evt, menuName) {
+    var i, tabcontent, tablinks;
+  
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove('main__card_menu_active')  
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add('main__card_menu_active');
+}
+
+function menu1(evt, menuName) {
+    var i, tabcontent, tablinks;
+  
+    tabcontent = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    tablinks = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove('main__card_menu_active')  
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add('main__card_menu_active');
+}
+
+function menu2(evt, menuName) {
+    var i, tabcontent, tablinks;
+  
+    tabcontent = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    tablinks = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove('main__card_menu_active')  
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add('main__card_menu_active');
+}
+
+var a = document.getElementById("carousel");
+
+a.addEventListener("click", function () {
+  console.log('aaa')
 })

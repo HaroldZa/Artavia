@@ -294,7 +294,7 @@ img {
     .footer__know_text{
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        transition: max-height 0.4s ease-out;
         margin: 0;
     }
     .footer__content_mobile{
@@ -359,7 +359,7 @@ img {
     .menu__submenu{
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        transition: max-height 0.4s ease-out;
     }
     .submenu:after { content: ' »'; } 
     .menu__submenu li{
@@ -444,8 +444,8 @@ img {
 }
 @media only screen and (max-width: 600px) {
     .menu {
-        width: 70%;
-        left: -70%;
+        width: 72%;
+        left: -72%;
         padding: 10rem 5rem 0 5rem;
    }
    .menu.active {

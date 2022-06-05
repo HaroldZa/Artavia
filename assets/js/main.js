@@ -10,8 +10,10 @@ for (i = 0; i < title.length; i++) {
       var content = this.nextElementSibling;
       if (content.style.maxHeight){
         content.style.maxHeight = null;
+        this.classList.remove("active");
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
+        this.classList.add("active");
       }
     });
   }
@@ -54,10 +56,10 @@ document.querySelectorAll(".footer__title_top").forEach(el => {
   });
 
 const toggler = document.querySelector('.menu__toggler');
-const menu    = document.querySelector('.menu');
+const menun    = document.querySelector('.menu');
 
 toggler.addEventListener('click', () => {
   toggler.classList.toggle('active');
-  menu.classList.toggle('active');
+  menun.classList.toggle('active');
 })
 
