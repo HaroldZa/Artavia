@@ -4,6 +4,9 @@
         font-size: 3.3rem;
     }
 }
+.ov{
+    overflow: hidden;
+}
 .platforms{
     display: flex;
     justify-content: center;
