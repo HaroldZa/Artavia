@@ -552,6 +552,7 @@ input[type=number] {
 .tab1,
 .tab2 {
     overflow: hidden;
+    pointer-events: auto;
 }
 .tabcontent,
 .tabcontent1,
@@ -602,12 +603,10 @@ input[type=number] {
         align-items: center;
         justify-content: center;
         transform-style: preserve-3d;
-        
         --items: 3;
         --middle: 2;
         --position: 1;
-
-
+        pointer-events: none;
     }
 
     .item {
@@ -671,7 +670,7 @@ input[type=number] {
 
     .reviews__cards_mobile {
         position: absolute;
-        padding-left: 2rem;
+        padding-left: 1rem;
         padding-right: 2rem;
         display: flex;
         gap: 2rem;
@@ -690,7 +689,7 @@ input[type=number] {
     .reviews__card {
         margin: 0;
         padding: 0;
-        width: 36rem;
+        width: 34rem;
         height: 26rem;
         object-fit: cover;
         border: 1px solid #606060;
@@ -743,7 +742,7 @@ input[type=number] {
         grid-column: 1;
         grid-row: 2;
     }
-    .main__card_menu ul li:nth-child(1){
+    .top{
         background-color: #F2F2F2;
         position: absolute;
         width: 100%;
@@ -852,9 +851,8 @@ input[type=number] {
         height: 160rem;
         margin-top: -10rem;
     }
-
     .contact__conten {
-        margin-top: 45rem;
+        margin-top: 40rem;
     }
 
     .reviews__paragraph {
@@ -881,14 +879,15 @@ input[type=number] {
 
     .cards__content {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .item{
+        margin-top: -10rem;
     }
 }
 
 @media (max-width: 510px) {
-    .contact__conten {
-        margin-top: 50rem;
-    }
-
     .cards_main__card_button a {
         font-size: 1.5rem;
         padding: 1rem;
@@ -907,10 +906,6 @@ input[type=number] {
 }
 
 @media (max-width: 390px) {
-    .contact__conten {
-        margin-top: 65rem;
-    }
-
     .cards_main__card_button a {
         font-size: 1.2rem;
     }

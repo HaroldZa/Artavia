@@ -71,7 +71,7 @@
     justify-content: center;
     position: relative;
     z-index: 1;
-    padding-top: 5rem;
+    margin-top: 5rem;
 }
 .card__content{
     display: grid;
@@ -95,7 +95,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
     font-size: 2.7rem;
     font-weight: bold;
     color: #F3487D;
@@ -235,7 +234,6 @@
 }
 .card_email__terminos{
     margin-top: .2rem;
-    margin-left: 2rem;
     color: var(--white);
 }
 .card_email__terminos input{
@@ -459,6 +457,13 @@
     }
 }
 @media (max-width: 490px){
+    .highlights__title{
+        font-size: 2rem;
+    }
+    .highlights__paragraph span{
+        font-size: 1.3rem;
+        width: 95%;
+    }
     .card_email__img{
         left: 45%;
     }
@@ -488,6 +493,9 @@
 }
 
 @media (max-width: 360px){
+    .card{
+        
+    }
     .card_email{
         padding-bottom: 55rem;
     }

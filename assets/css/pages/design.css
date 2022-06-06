@@ -152,6 +152,9 @@
     color: #675DDA;
     font-weight: 800;
 }
+.works__text{
+    padding: 0 1rem;
+}
 .works__text span{
     font-size: 1.8rem;
     color: #606060;
@@ -190,6 +193,7 @@
     margin: 0 auto;
     color: #6F63E9;
     font-weight: 800;
+    padding: 0 1rem;
 }
 .faq__content{
     display: grid;
@@ -341,7 +345,7 @@
     }
     .faq__title{
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.7rem;
         color: #606060;
     }
 }
@@ -360,22 +364,22 @@
     }
     .main__img{
         margin-top: 0;
-        width: 50rem;
+        max-width: 90%;
         height: auto;
     }
     .main__img__content{
         height: 30rem;
     }
+    .main__paragraph{
+        color: #606060;
+        width: 95%;
+        padding-top: 7rem;
+    }
 }
 
 @media (max-width: 490px){
     .card_design{
-        padding: 2rem 0;
-    }
-    .main__img{
-        margin-top: 0;
-        width: 40rem;
-        height: auto;
+        padding: 2rem 1rem;
     }
     .main__img__content{
         margin-top: 16rem;

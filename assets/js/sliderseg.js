@@ -76,13 +76,16 @@ function menu(evt, menuName) {
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove('main__card_menu_active')  
+      tablinks[i].classList.remove('top')  
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
     document.getElementById(menuName).style.display = "block";
     evt.currentTarget.className += " active";
     evt.currentTarget.classList.add('main__card_menu_active');
+    evt.currentTarget.classList.add('top');
 }
+
 
 function menu1(evt, menuName) {
     var i, tabcontent, tablinks;
@@ -121,9 +124,3 @@ function menu2(evt, menuName) {
     evt.currentTarget.className += " active";
     evt.currentTarget.classList.add('main__card_menu_active');
 }
-
-var a = document.getElementById("carousel");
-
-a.addEventListener("click", function () {
-  console.log('aaa')
-})

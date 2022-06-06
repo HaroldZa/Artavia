@@ -509,3 +509,9 @@
         padding: 0;
     }
 }
+
+@media (max-width: 320px){
+    .card_purpose_title{
+        font-size: 3.2rem;
+    }
+}

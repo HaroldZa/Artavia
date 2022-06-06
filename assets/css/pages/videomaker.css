@@ -26,11 +26,16 @@
 .card__text{
     padding: 4rem 3rem 3rem 4rem;
 }
+.card__text span{
+    display: block;
+    line-height: 1.4;
+}
 .card_subtitle{
     font-size: 1.8rem;
     color: #B3B3B3;
     text-transform: uppercase;
     padding-left: 1rem;
+    padding-bottom: 2rem;
 }
 .card_title{
     width: 80%;
@@ -112,7 +117,7 @@
     }
     /* FAQ */
     .faq{
-        margin-top: 0rem;
+        margin-top: -10rem;
         padding: 0;
     }
     .faq__content{
@@ -127,5 +132,15 @@
     }
     .faq__single{
         padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .hero__paragraph{
+        font-size: 1.8rem;
+    }
+    .card_title{
+        width: 98%;
+        font-size: 2.3rem;
     }
 }

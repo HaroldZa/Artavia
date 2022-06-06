@@ -312,6 +312,9 @@
         margin-top: 30rem;
         padding: 0;
     }
+    .main__paragraph{
+        width: 90%;
+    }
 }
 
 @media (max-width: 490px){

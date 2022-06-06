@@ -78,14 +78,10 @@
     height: 26.1rem;
 }
 .tools__title{
-    font-size: 4.2rem;
-    font-weight: 400;
-    color: var(--white);
     text-align: center;
-}
-.tools__title span{
-    display: block;
+    font-size: 4.2rem;
     font-weight: 800;
+    color: var(--white);
 }
 .tools__content_img{
     position: absolute;
@@ -97,12 +93,11 @@
     border-radius: 1rem;
     -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.7); 
     box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.7);
-    width: 100%;
+    width: 90%;
 }
 .tools__img{
-    padding-right: 5rem;
-    width: 80%;
-    filter: grayscale(1);
+    margin: -.5rem 0;
+    width: 90%;
 }
 
 /* Processes */
@@ -240,33 +235,38 @@
     .hero__paragraph{
         font-size: 1.8rem;
     }
+    .card__title{
+        font-size: 3.8rem;
+    }
     /* Tools */
     .tools{
         height: 15rem;
     }
     .tools__title{
-        margin-top: 30rem;
-        font-size: 3.5rem;
+        margin-top: -10rem;
+        font-size: 3rem;
     }
     .tools__img{
-        padding-right: 0;
-        margin: 1rem auto 0 auto;
+        margin: -10rem auto 0 auto;
         width: 90%;
-        filter: grayscale(0);
     }
     /* Processes */
     .processes{
-        margin-top: 40rem;
+        margin-top: 25rem;
+        padding: 0 2rem;
     }
     .processes__title{
-        font-size: 3.9rem;
+        font-size: 3.2rem;
     }
     .processes__cards{
         grid-template-columns: repeat(2, 1fr);
     }
+    .process__title{
+        font-size: 2rem;
+    }
     /* FAQ */
     .faq{
-        margin-top: 7rem;
+        margin-top: 5rem;
         padding: 0;
     }
     .faq__content{

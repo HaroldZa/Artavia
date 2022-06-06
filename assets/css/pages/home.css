@@ -44,6 +44,13 @@
     color: var(--white);
     padding: 1.5rem 2.5rem;
     font-size: 1.7rem;
+    overflow: hidden;
+    transition: .3s;
+}
+.hero__btnh:hover{
+    color: #c0e4da;
+    background: #7162ef;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
 }
 /* Card marketing */
 .card_marketing{
@@ -99,20 +106,20 @@
 .cards{
     margin-top: 7rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 6rem;
-    
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     overflow: hidden;
+    column-gap: 6rem;
+    row-gap: 5rem;
+    padding: 0 2rem 3rem 2rem;
 }
 .card{
     display: grid;
-    grid-auto-rows: 1fr;
     margin-top: 0;
+    overflow: hidden;
+    transition: .3s;
 }
-.card:nth-child(4),
-.card:nth-child(5),
-.card:nth-child(6){
-    margin-top: calc(100% - 63rem);
+.card:hover{
+    transform: scale(1.05);
 }
 .card__content {
     text-align: center;
@@ -122,7 +129,6 @@
     position: relative;
     padding: 5rem 4rem 0 4rem;
     color: #606060;
-    margin-top: 0.2rem;
     margin-bottom: -0.05rem;
   }
   .card__content::before,
@@ -165,21 +171,29 @@
 /* Cards Work */
 .card_work{
     overflow: hidden;
+    transition: .3s;  
     color: var(--white);
 }
 .card_work__content{
+    width: 87%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding: 5rem 10rem;
+    padding: 5rem 0;
 }
 .card_work__card{
     text-align: center;
     padding: 3rem 2rem;
     border-radius: 20% 0 0 0;
     opacity: 0.8;
+    overflow: hidden;
+    transition: .3s;  
+}
+.card_work__card:hover{
+    transform: scale(1.05);
 }
 .card_work__card:nth-child(1){
     background-color: #675DDA;
@@ -196,6 +210,7 @@
 .card_work__title{
     font-size: 3.5rem;
     font-weight: 800;
+    word-wrap: break-word;
 }
 .card_work__paragraph{
     line-height: 1.2;
@@ -212,7 +227,7 @@
     .card_work{
         background-image: url(../../images/h_36.png);
         background-repeat: no-repeat;
-        margin-top: -20rem;
+        margin-top: 15rem;
     }
     .card_subwork{
         position: relative;
@@ -291,7 +306,7 @@
  }
 .card_steps__subtitle{
     font-size: 3rem;
-    padding-bottom: 3.5rem;
+    padding: 0 1rem 3.5rem 1rem;
 }
 .card_steps__step:nth-child(1){
     background-color: #6F63E9;
@@ -314,7 +329,6 @@
 }
 .card_email__img{
     margin-top: -33%;
-    height: auto;
 }
 .card_email__content{
     padding: 7rem 0 1rem 0;
@@ -326,14 +340,17 @@
 .card_email__title{
     font-size: 3.9rem;
     font-weight: 800;
+    line-height: 1.2;
 }
 .card_email__subtitle{
     font-size: 3rem;
     margin: 0;
+    line-height: 1.2;
+    padding-bottom: 3rem;
 }
 .card_email__form{
     position: relative;
-    width: 75%;
+    width: 90%;
 }
 .card_email__form_text{
     position: absolute;
@@ -341,6 +358,7 @@
     padding: 1.4rem 17rem 1.4rem 1.4rem;
     border: none;
     border-radius: 50px;
+    outline: none;
 }
 .card_email__btn{
     position: absolute;
@@ -352,7 +370,8 @@
 .card_email__btn:hover{
     cursor: pointer;
 }
-.card_email__form_btn{    
+.card_email__form_btn{  
+    position: relative;  
     padding: 0.5rem 4.5rem 0.5rem 1.5rem;
     margin-top: .2rem;
     border: none;
@@ -365,8 +384,9 @@
 }
 .card_email__form_icon{
     position: absolute;
-    right: 0;
-    width: 4.5rem;
+    right: -3%;
+    bottom: -12.8%;
+    width: 5rem;
 }
 
 /* FAQ */
@@ -445,10 +465,6 @@
 }
 
 @media (max-width: 1000px){
-    .card:nth-child(3){
-        margin-top: calc(100% - 63rem);
-    }
-
     .first{
         --position: 1;
     }
@@ -474,15 +490,16 @@
         display: flex;
         justify-content: center;
         text-align: center;
+        padding-bottom: 1rem;
     }
     
     .slider__icon{
-        width: 6rem;
+        width: 5.5rem;
+        transition: all .2s ease-in-out;
     }
-    .card_work__content{
-        padding: 5rem 0;
+    .slider__icon:active {
+        transform: translateY(4px);
     }
-    
     #carousel {
         width: 100%;
         height: 52rem;
@@ -537,13 +554,11 @@
 
     /* Cards */
     .cards{
-        padding: 0 2rem;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 6rem;
+        padding: 0 1rem;
     }
     /* Work */
     .card_work{
-        margin-top: -20rem ;
+        margin-top: 4rem;
     }
     /* Sub Work */
     .card_subwork__content{
@@ -578,15 +593,18 @@
     }
     /* email */
     .card_email{
+        display: block;
         position: relative;
-        margin-top: 45rem;
-        grid-template-columns: 1fr;
     }
-    .card_email__img{
+    .card_email__img_container{
         position: absolute;
-        width: 63.4%;
-        top: -35%;
-        left: 20%;
+        bottom: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-bottom: 1rem;
     }
     .card_email__content{
         margin: 6rem auto 0 auto;
@@ -614,9 +632,6 @@
     }
     .hero__infoh{
         margin-top: 12rem;
-    }
-    .card_email__img{
-        top: -30%;
     }
     /* FAQ */
     .faq{
@@ -660,18 +675,23 @@
     .card_steps__subtitle{
         font-size: 2.5rem;
     }
+    .hero__contact{
+        display: none;
+    }
+}
+
+@media (max-width: 660px){
+    .cards{
+        row-gap: 1rem;
+    }
 }
 
 @media (max-width: 600px){
-    .card:nth-child(2),
-    .card:nth-child(3),
-    .card:nth-child(4),
-    .card:nth-child(5),
-    .card:nth-child(6){
-        margin-top: calc(100% - 70rem);
+    .card_email{
+        margin-top: 92%;
     }
-    .card:nth-child(1){
-        margin-top: 0;
+    .card_email__content{
+        width: 90%;
     }
     .hero__paragraphh{
         font-size: 2rem;
@@ -681,17 +701,6 @@
     }
     .hero__titleh span{
         font-size: 6.2rem;
-    }
-    .cards{
-        grid-template-columns: 1fr;
-    }
-    .card_email{
-        margin-top: 30rem;
-    }
-    .card_email__img{
-        left: 15%;
-        width: 70%; 
-        top: -20%;
     }
     .card_marketing__title{
         font-size: 2.6rem;
@@ -708,17 +717,49 @@
 }
 
 @media (max-width: 490px){
-    .card_email__img{
-        left: 5%;
-        width: 90%;
-        top: -34%;
+    .card_subwork__paragraph{
+        width: 98%;
+    }
+    .item {
+        transform: translateX(calc(-315px * var(--r)));
+    }
+    .card_email__title{
+        font-size: 2.9rem;
+    }
+    .card_email__subtitle{
+        font-size: 2rem;
+        line-height: 1.2;
+        padding: 0rem 0 1.5rem 0;
     }
 }
 
-@media (max-width: 490px){
-    .card_email__img{
-        left: 0;
-        width: 100%;
-        top: -33%;
+@media (max-width: 310px){
+    .card_email__img_container{
+        bottom: 17rem;
+    }
+    .card_steps{
+        display: block;
+    }
+    .hero__texth,
+    .card_marketing__title{
+        word-wrap: break-word;
+        margin: 0 auto;
+        width: 98%;
+    }
+    .cards{
+        word-wrap: break-word;
+        padding: 0;
+    }
+}
+
+@media (max-width: 390px){
+    .hero__titleh{
+        font-size: 3.2rem;
+    }
+    .hero__titleh span{
+        font-size: 5.2rem;
+    }
+    .hero__paragraphh{
+        font-size: 1.3rem;
     }
 }

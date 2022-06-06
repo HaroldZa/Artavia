@@ -243,6 +243,7 @@
     .card__img{
         margin-top: 2rem;
         width: 100%;
+        padding: 0 2rem;
     }
     .card__paragraph{
         font-size: 1.9rem;

@@ -153,6 +153,7 @@
     font-size: 3.9rem;
     color: #675DDA;
     font-weight: 800;
+    padding-bottom: .5rem;
 }
 .works__text span{
     text-transform: uppercase;
@@ -236,6 +237,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: 42rem;
+        margin-top: 5rem;
     }
     .first{
         --position: 1;
@@ -385,8 +387,17 @@
 
 
 @media (max-width: 490px){
+    .hero__paragraph{
+        font-size: 1.8rem;
+    }
     .highlights__cards{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    .highlights__title{
+        font-size: 2rem;
+    }
+    .highlights__paragraph span{
+        font-size: 1.3rem;
+        width: 95%;
+    }
 }
