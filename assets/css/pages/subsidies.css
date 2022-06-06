@@ -189,7 +189,7 @@
 .main__card_menu_active {
     filter: grayscale(0) !important;
     background-color: var(--white);
-}
+} 
 
 .tablinks span,
 .tablinks1 span,
