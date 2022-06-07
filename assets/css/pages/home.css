@@ -5,6 +5,9 @@
     background-position: center bottom;
     overflow: hidden;
 }
+.ov{
+    overflow: hidden;
+}
 .hero__infoh{ 
     display: flex;
     align-items: center;
