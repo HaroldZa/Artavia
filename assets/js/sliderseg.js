@@ -13,6 +13,9 @@ document.getElementById('liWebsite').click();
 document.getElementById('liWebsite1').click();
 document.getElementById('liWebsite1').click();
 
+document.getElementById('liWebsite2').click();
+document.getElementById('liWebsite2').click();
+
 
 var array = [];
 var collapseActive;
@@ -193,14 +196,15 @@ function menu2(evt, menuName) {
 
   var z;
   for (z = 0; z < collapseActive2.length; z++) {
-    document.getElementById('liWebsite2').click();
+    document.getElementById(`${'li' + menuName }`).click();
     collapseActive2[z].addEventListener("click", function () {
       var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
+      if (content.style.maxHeight == '0px') {
+        content.style.maxHeight = '0px';
         this.classList.remove("active");
+        content = ''
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = "526px";
         this.classList.add("active");
       }
     });
