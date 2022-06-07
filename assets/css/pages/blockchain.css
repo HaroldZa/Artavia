@@ -521,6 +521,9 @@
 }
 
 @media (max-width: 490px){
+    .card_main__img{
+        min-width: 104%;
+    }
     .card__title{
         font-size: 1.7rem;
     }
