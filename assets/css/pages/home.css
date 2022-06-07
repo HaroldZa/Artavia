@@ -5,7 +5,7 @@
     background-position: center bottom;
     overflow: hidden;
 }
-.hero__infoh{
+.hero__infoh{ 
     display: flex;
     align-items: center;
     justify-content: end;
@@ -289,7 +289,7 @@ svg {
     box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.3);
 }
 .card_subwork__img{
-    height: auto;
+    
 }
 .card_subwork__text{
     padding: 5rem 1.5rem 0 2rem;
@@ -792,6 +792,13 @@ svg {
 }
 
 @media (max-width: 490px){
+    .card_subwork__img{
+        margin: 2rem auto 0 auto;
+        min-width: 102%;
+    }
+    .card_email__img{
+        min-width: 104%;
+    }
     .card_subwork__paragraph{
         width: 98%;
     }
@@ -806,6 +813,7 @@ svg {
         line-height: 1.2;
         padding: 0rem 0 1.5rem 0;
     }
+    
 }
 
 @media (max-width: 390px){
