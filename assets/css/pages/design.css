@@ -266,18 +266,15 @@
         margin-top: 32rem;
         position: absolute;
         left: 0;
-        background-image: url(../../images/bg_h_36_.png);
+        background-image: url(../../images/bg_h_36_rot.png);
         background-repeat: no-repeat;
-        background-position: bottom center;
+        background-position: top center;
         width: 100%;
         height: 40rem;
-        transform: rotate(180deg);
         padding-top: 2rem;
     }
     .main__img{
-        position: static;
-        transform: rotate(-180deg);
-        
+        position: static;        
     }
     .main__paragraph{
         color: #606060;
