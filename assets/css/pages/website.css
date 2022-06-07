@@ -425,6 +425,9 @@
 }
 
 @media (max-width: 450px){
+    .main__img{
+        min-width: 103%;
+    }
     .card_steps{
         margin-top: 2rem;
         grid-template-columns: repeat(1, 1fr);

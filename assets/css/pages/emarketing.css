@@ -389,8 +389,14 @@
     .mobile{
         display: grid;
     }
-    .info__img{
-        
+    .card_purpose__img_container{
+        margin: -5rem auto 2rem auto;
+    }
+    .card_purpose__img,
+    .card__email_marketing__img{
+        position: relative;
+        width: auto !important;
+        margin: 0 auto;
     }
     .container{
         width: 100% !important;
@@ -412,10 +418,6 @@
     }
     .card_purpose__content{
         grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .card_purpose__img,
-    .card__email_marketing__img{
         width: 100%;
     }
     /* steps */
@@ -507,6 +509,13 @@
     .card_email__card:nth-child(1){
         border-right: 0;
         padding: 0;
+    }
+}
+
+@media (max-width: 450px){
+    .card__email_marketing__img,
+    .info__img{
+        min-width: 104%;
     }
 }
 
