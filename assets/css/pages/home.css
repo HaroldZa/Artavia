@@ -792,13 +792,7 @@ svg {
 }
 
 @media (max-width: 490px){
-    .card_subwork__img{
-        margin: 2rem auto 0 auto;
-        min-width: 102%;
-    }
-    .card_email__img{
-        min-width: 104%;
-    }
+    
     .card_subwork__paragraph{
         width: 98%;
     }
