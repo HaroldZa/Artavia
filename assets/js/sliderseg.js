@@ -13,8 +13,6 @@ document.getElementById('liWebsite').click();
 document.getElementById('liWebsite1').click();
 document.getElementById('liWebsite1').click();
 
-document.getElementById('liWebsite2').click();
-document.getElementById('liWebsite2').click();
 
 var array = [];
 var collapseActive;
@@ -185,17 +183,17 @@ function menu2(evt, menuName) {
   evt.currentTarget.classList.add('main__card_menu_active');
 
   collapseActive2 = document.getElementsByClassName("main__card_menu_active");
-  collapsed = document.getElementsByClassName("collapse2");
+  collapsed2 = document.getElementsByClassName("collapse2");
 
-  for (i = 0; i < collapsed.length; i++) {
-    collapsed[i].style.maxHeight = null;
+  for (i = 0; i < collapsed2.length; i++) {
+    collapsed2[i].style.maxHeight = null;
   }
 
   document.getElementById(`${menuName + 'B'}`).innerHTML = document.getElementById(menuName).innerHTML;
 
   var z;
   for (z = 0; z < collapseActive2.length; z++) {
-    document.getElementById(`${'li' + menuName }`).click();
+    document.getElementById('liWebsite2').click();
     collapseActive2[z].addEventListener("click", function () {
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {

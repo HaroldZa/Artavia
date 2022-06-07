@@ -216,11 +216,7 @@
     border-radius: 0 0 12rem 0;
     padding: 0 3rem;
 }
-.collapse_desactive{
-    max-height: 0 !important;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-}
+
 .main__card_title {
     font-size: 3.9;
     font-weight: 800;
@@ -870,7 +866,7 @@ input[type=number] {
     }
 
     .main__cards_card {
-        margin-top: -2rem;
+        margin-top: 7rem;
     }
 }
 
@@ -920,6 +916,9 @@ input[type=number] {
         font-size: 1.5rem;
         padding: 1rem;
     }
+    .main__cards_card {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -941,7 +940,9 @@ input[type=number] {
     .cards_main__card_button a {
         font-size: 1.2rem;
     }
-
+    .main__cards_card {
+        margin-top: -12rem;
+    }
     #carousel {
         height: 200rem;
         margin-top: -20rem;
@@ -957,7 +958,6 @@ input[type=number] {
         height: 240rem;
         margin-top: -30rem;
     }
-
     .cards {
         margin-top: -30rem;
     }
