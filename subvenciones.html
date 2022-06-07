@@ -157,46 +157,76 @@
                 <div class="main__card" >
                     <div class="main__card_menu">
                         <ul class="tab">
-                            <li class="main__card_menu_active top tablinks" onclick="menu(event, 'Website')">
+                            <li id="liWebsite" class="main__card_menu_active top tablinks" onclick="menu(event, 'Website');">
                                 <img class="active__img" src="assets/images/icons/i_f.png" alt="">
                                 <span>Página Web</span>
                             </li>
-                            <li class="tablinks top1" onclick="menu(event, 'Store')">
+                            <div class="collapse mobile">
+                                <div id="WebsiteC"></div>
+                            </div>
+                            <li id="liStore" class="tablinks" onclick="menu(event, 'Store')">
                                 <img class="active__img" src="assets/images/icons/i_f.png" alt="">
                                 <span>Tienda online</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Social')">
+                            <div class="collapse mobile">
+                                <div id="StoreC">b</div>
+                            </div>
+                            <li id="liSocial" class="tablinks" onclick="menu(event, 'Social')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Redes sociales</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Customers')">
+                            <div class="collapse mobile">
+                                <div id="SocialC">a</div>
+                            </div>
+                            <li id="liCustomers" class="tablinks" onclick="menu(event, 'Customers')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Gestión de Clientes</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Business')">
+                            <div class="collapse mobile">
+                                <div id="CustomersC">a</div>
+                            </div>
+                            <li id="liBusiness" class="tablinks" onclick="menu(event, 'Business')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Business Intelligence</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Process')">
+                            <div class="collapse mobile">
+                                <div id="BusinessC">a</div>
+                            </div>
+                            <li id="liProcess" class="tablinks" onclick="menu(event, 'Process')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Gestión de Procesos ERP</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Invoice')">
+                            <div class="collapse mobile">
+                                <div id="ProcessC">a</div>
+                            </div>
+                            <li id="liInvoice" class="tablinks" onclick="menu(event, 'Invoice')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Factura Electrónica</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Service')">
+                            <div class="collapse mobile">
+                                <div id="InvoiceC">a</div>
+                            </div>
+                            <li id="liService" class="tablinks" onclick="menu(event, 'Service')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Servicios de oficina virtual</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Comunication')">
+                            <div class="collapse mobile">
+                                <div id="ServiceC">a</div>
+                            </div>
+                            <li id="liComunication" class="tablinks" onclick="menu(event, 'Comunication')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Comunicaciones Seguras</span>
                             </li>
-                            <li class="tablinks" onclick="menu(event, 'Security')">
+                            <div class="collapse mobile">
+                                <div id="ComunicationC">a</div>
+                            </div>
+                            <li id="liSecurity" class="tablinks" onclick="menu(event, 'Security')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Ciberseguridad</span>
                             </li>
+                            <div class="collapse mobile">
+                                <div id="SecurityC">a</div>
+                            </div>
                         </ul>
                     </div>
                     <div class="main__card_text">
@@ -396,46 +426,76 @@
                 <div class="main__card">
                     <div class="main__card_menu">
                         <ul class="tab1">
-                            <li class="main__card_menu_active top tablinks1" onclick="menu1(event, 'Website1')">
+                            <li id="liWebsite1" class="main__card_menu_active top tablinks1" onclick="menu1(event, 'Website1');">
                                 <img class="active__img" src="assets/images/icons/i_f.png" alt="">
                                 <span>Página Web</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Store1')">
+                            <div class="collapse1 mobile">
+                                <div id="Website1B"></div>
+                            </div>
+                            <li id="liStore1" class="tablinks1" onclick="menu1(event, 'Store1')">
                                 <img class="active__img" src="assets/images/icons/i_f.png" alt="">
                                 <span>Tienda online</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Social1')">
+                            <div class="collapse1 mobile">
+                                <div id="Store1B">b</div>
+                            </div>
+                            <li id="liSocial1" class="tablinks1" onclick="menu1(event, 'Social1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Redes sociales</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Customers1')">
+                            <div class="collapse1 mobile">
+                                <div id="Social1B"></div>
+                            </div>
+                            <li id="liCustomers1" class="tablinks1" onclick="menu1(event, 'Customers1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Gestión de Clientes</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Business1')">
+                            <div class="collapse1 mobile">
+                                <div id="Customers1B"></div>
+                            </div>
+                            <li id="liBusiness1" class="tablinks1" onclick="menu1(event, 'Business1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Business Intelligence</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Process1')">
+                            <div class="collapse1 mobile">
+                                <div id="Business1B">a</div>
+                            </div>
+                            <li id="liProcess1" class="tablinks1" onclick="menu1(event, 'Process1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Gestión de Procesos ERP</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Invoice1')">
+                            <div class="collapse1 mobile">
+                                <div id="Process1B">a</div>
+                            </div>
+                            <li id="liInvoice1" class="tablinks1" onclick="menu1(event, 'Invoice1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Factura Electrónica</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Service1')">
+                            <div class="collapse1 mobile">
+                                <div id="Invoice1B">a</div>
+                            </div>
+                            <li id="liService1" class="tablinks1" onclick="menu1(event, 'Service1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Servicios de oficina virtual</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Comunication1')">
+                            <div class="collapse1 mobile">
+                                <div id="Service1B">a</div>
+                            </div>
+                            <li id="liComunication1" class="tablinks1" onclick="menu1(event, 'Comunication1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Comunicaciones Seguras</span>
                             </li>
-                            <li class="tablinks1" onclick="menu1(event, 'Security1')">
+                            <div class="collapse1 mobile">
+                                <div id="Comunication1B">a</div>
+                            </div>
+                            <li id="liSecurity1" class="tablinks1" onclick="menu1(event, 'Security1')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Ciberseguridad</span>
                             </li>
+                            <div class="collapse1 mobile">
+                                <div id="Security1B">a</div>
+                            </div>
                         </ul>
                     </div>
                     <div class="main__card_text">
@@ -634,47 +694,77 @@
 
                 <div class="main__card">
                     <div class="main__card_menu">
-                        <ul class="tab1">
-                            <li class="main__card_menu_active top tablinks2" onclick="menu1(event, 'Website2')">
+                        <ul class="tab2">
+                            <li id="liWebsite2" class="main__card_menu_active top tablinks2" onclick="menu2(event, 'Website2');">
                                 <img class="active__img" src="assets/images/icons/i_f.png" alt="">
                                 <span>Página Web</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Store2')">
+                            <div class="collapse2 mobile">
+                                <div id="Website2B"></div>
+                            </div>
+                            <li id="liStore2" class="tablinks2" onclick="menu2(event, 'Store2')">
                                 <img class="active__img" src="assets/images/icons/i_f.png" alt="">
                                 <span>Tienda online</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Social2')">
+                            <div class="collapse2 mobile">
+                                <div id="Store2B">b</div>
+                            </div>
+                            <li id="liSocial2" class="tablinks2" onclick="menu2(event, 'Social2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Redes sociales</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Customers2')">
+                            <div class="collapse2 mobile">
+                                <div id="Social2B"></div>
+                            </div>
+                            <li id="liCustomers2" class="tablinks2" onclick="menu2(event, 'Customers2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Gestión de Clientes</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Business2')">
+                            <div class="collapse2 mobile">
+                                <div id="Customers2B"></div>
+                            </div>
+                            <li id="liBusiness2" class="tablinks2" onclick="menu2(event, 'Business2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Business Intelligence</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Process2')">
+                            <div class="collapse2 mobile">
+                                <div id="Business2B">a</div>
+                            </div>
+                            <li id="liProcess2" class="tablinks2" onclick="menu2(event, 'Process2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Gestión de Procesos ERP</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Invoice2')">
+                            <div class="collapse2 mobile">
+                                <div id="Process2B">a</div>
+                            </div>
+                            <li id="liInvoice2" class="tablinks2" onclick="menu2(event, 'Invoice2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Factura Electrónica</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Service2')">
+                            <div class="collapse2 mobile">
+                                <div id="Invoice2B">a</div>
+                            </div>
+                            <li id="liService2" class="tablinks2" onclick="menu2(event, 'Service2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Servicios de oficina virtual</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Comunication2')">
+                            <div class="collapse2 mobile">
+                                <div id="Service2B">a</div>
+                            </div>
+                            <li id="liComunication2" class="tablinks2" onclick="menu2(event, 'Comunication2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Comunicaciones Seguras</span>
                             </li>
-                            <li class="tablinks2" onclick="menu2(event, 'Security2')">
+                            <div class="collapse2 mobile">
+                                <div id="Comunication2B">a</div>
+                            </div>
+                            <li id="liSecurity2" class="tablinks2" onclick="menu2(event, 'Security2')">
                                 <img src="assets/images/icons/i_f.png" alt="">
                                 <span>Ciberseguridad</span>
                             </li>
+                            <div class="collapse2 mobile">
+                                <div id="Security2B">a</div>
+                            </div>
                         </ul>
                     </div>
                     <div class="main__card_text">
@@ -683,7 +773,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -701,7 +791,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -719,7 +809,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -737,7 +827,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -755,7 +845,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -773,7 +863,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -791,7 +881,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -809,7 +899,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>
@@ -827,7 +917,7 @@
                             <p class="main__card_paragraph ">Realización de una página web para la empresa con la cual pueda
                                 obtener mayor visibilidad y atraer a más clientes.</p>
                             <h3 class="main__card_title ">Bono de 2.000€</h3>
-                            <p class="main__card_paragraph ">Empresas de entre 10 y menos de 50 empleados.</p>
+                            <p class="main__card_paragraph ">Empresas de entre 20 y menos de 50 empleados.</p>
                             <ul class="">
                                 <li>Dominio
                                 </li>

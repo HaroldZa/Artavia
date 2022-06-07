@@ -197,17 +197,34 @@
     padding-right: 7rem;
 }
 
-.main__card_text {
+.main__card_text{
     color: var(--white);
-    padding: 3rem;
+    padding: 0 3rem;
     background: linear-gradient(90deg, rgba(247, 58, 126, 1) 0%, rgba(254, 96, 67, 1) 100%);
     border-radius: 0 0 12rem 0;
     grid-column: 2/4;
 }
-
+.collapse,
+.collapse1,
+.collapse2{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    text-align: left;
+    color: var(--white);
+    background: linear-gradient(90deg, rgba(247, 58, 126, 1) 0%, rgba(254, 96, 67, 1) 100%);
+    border-radius: 0 0 12rem 0;
+    padding: 0 3rem;
+}
+.collapse_desactive{
+    max-height: 0 !important;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
 .main__card_title {
     font-size: 3.9;
     font-weight: 800;
+    padding-top: 3rem;
 }
 
 .main__card_paragraph {
@@ -580,7 +597,8 @@ input[type=number] {
         display: grid;
     }
 
-    .desktop {
+    .desktop,
+    .main__card_text {
         display: none;
     }
 
@@ -735,6 +753,11 @@ input[type=number] {
     .main__btn_right {
         width: 5rem;
         height: 5rem;
+        transition: all .2s ease-in-out;
+    }
+    .main__btn_left:active,
+    .main__btn_right:active{
+        transform: translateY(4px);
     }
 
     .main__card{
@@ -743,7 +766,7 @@ input[type=number] {
         position: relative;
         grid-template-columns: 1fr;
         background-color: #F2F2F2;
-        padding-top: 5rem;
+        padding-top: 0;
     }
     .main__card_menu{
         grid-row: 3;
@@ -752,12 +775,7 @@ input[type=number] {
         grid-column: 1;
         grid-row: 2;
     }
-    .top{
-        background-color: #F2F2F2;
-        position: absolute;
-        width: 100%;
-        top: 0;
-    }
+    
 
     /* FAQ */
     .faq {
