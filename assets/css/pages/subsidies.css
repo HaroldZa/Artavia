@@ -791,7 +791,7 @@ input[type=number] {
     /* Cards main */
     .cards_main__card_img {
         margin: 0;
-        width: 100%;
+        width: auto;
     }
 
     .cards_main__card_subtitle {
@@ -909,6 +909,10 @@ input[type=number] {
 
     .cards {
         margin-top: -15rem;
+    }
+    .cards_main__card_img{
+        min-width: 104%;
+        margin-left: -1rem;
     }
 }
 
