@@ -205,6 +205,9 @@
     font-weight: 800;
     padding: 0 1rem;
 }
+.faq__multi_single{
+    padding-right: 3rem;
+}
 .faq__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

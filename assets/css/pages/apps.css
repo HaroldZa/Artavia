@@ -212,6 +212,9 @@
     justify-content: space-between;
     transition: all .2s ease-in-out;
 }
+.faq__multi_single{
+    padding-right: 3rem;
+}
 .faq__multi_single:hover,
 .faq__single:hover{
     cursor: pointer;

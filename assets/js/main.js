@@ -14,6 +14,7 @@ for (i = 0; i < title.length; i++) {
         this.classList.remove("active");
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
+        
         this.classList.add("active");
       }
     });
@@ -63,4 +64,3 @@ toggler.addEventListener('click', () => {
   toggler.classList.toggle('active');
   menun.classList.toggle('active');
 })
-

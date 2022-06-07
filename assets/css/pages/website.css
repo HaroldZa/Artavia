@@ -245,6 +245,9 @@
     color: #F3487D;
     font-weight: 800;
 }
+.faq__multi_single{
+    padding-right: 3rem;
+}
 .faq__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -120,6 +120,9 @@
         margin-top: -10rem;
         padding: 0;
     }
+    .faq__multi_single{
+        padding-right: 3rem;
+    }
     .faq__content{
         display: grid;
         gap: 2rem;

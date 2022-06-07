@@ -485,12 +485,17 @@ svg {
     padding: 0 1rem;
 }
 .faq__single{
+    transition: all .2s ease-in-out;
+}
+.faq__single_content{
+    border-radius: 20px;
     padding: 2rem 3rem;
     box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
-    border-radius: 20px;
-    transition: all .2s ease-in-out;
+}
+.faq__multi_single{
+    padding-right: 3rem;
 }
 .faq__single_top,
 .faq__multi_single{

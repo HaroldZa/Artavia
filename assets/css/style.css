@@ -297,6 +297,111 @@ img {
 .footer__nav ul li a{
     color: var(--white);
 }
+
+.faq__single__text{
+    transition: all .2s ease-in-out;
+}
+.faq-list > div {
+    border-bottom: 0.07em solid #ededed;
+    padding: 1.5em 0em;
+} 
+.faq__single,
+.faq__multi_single{
+    position: relative;
+}
+.faq-list > div:last-child {
+    border: unset;
+}
+
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    margin-top: -2rem;
+    padding-right: 4rem;
+    transition: all 0.3s ease;
+}
+
+.faq_right{
+    padding-bottom: 1rem !important;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 55px}
+}
+
+details[open] summary ~ * {
+    transition: max-height 0.15s ease-out;
+}
+
+details[open] p {
+    border-left: 2px solid #f73a7e;
+    margin-left: 20px;
+    padding-left: 25px;
+    opacity: 100;
+    transition: all 3s ease; 
+}
+
+.faq_right details[open] p{
+    border-left: 2px solid #7162ef;
+}
+
+details[open] summary:after {
+    content: url('../images/icons/f_02.png');
+    transform: rotate(180deg) scale(.5);
+    position: absolute;
+    top: .5rem;
+    right: 3.2%;
+    transition: transform .4s ease-in-out;
+}
+
+.faq_right details[open] summary:after {
+    content: url('../images/icons/f_01.png');
+    transform: rotate(180deg) scale(.5);
+    position: absolute;
+    top: -1.6rem;
+    right: -.7rem;
+    transition: transform .4s ease-in-out;
+}
+
+.faq_right summary:after {
+    background: transparent;
+    content: url('../images/icons/f_01.png');
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    transform: scale(.5);
+    transition: transform .4s ease-in-out;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+    
+}
+
+summary:after {
+    background: transparent;
+    content: url('../images/icons/f_02.png');
+    position: absolute;
+    top: 1rem;
+    right: 3%;
+    transform: scale(.5);
+    transition: transform .4s ease-in-out;
+}
 .mobile_menu{
     display: none;
 }
