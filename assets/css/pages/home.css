@@ -39,18 +39,44 @@
     font-size: 1.8rem;
     letter-spacing: .5rem;
 }
-.hero__btnh {
-    background-color: var(--purple);
-    color: var(--white);
-    padding: 1.5rem 2.5rem;
-    font-size: 1.7rem;
-    overflow: hidden;
-    transition: .3s;
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
-.hero__btnh:hover{
-    color: #c0e4da;
-    background: #7162ef;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: var(--purple);
+    border: 1px solid #606060;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: hsl(246, 100%, 76%);
+}
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
 }
 /* Card marketing */
 .card_marketing{
@@ -84,6 +110,15 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.card_marketing__img:hover,
+.card_subwork__img:hover,
+.card_email__img:hover{
+    filter: brightness(1.05);
+}
+.card_steps__title:hover,
+.card_steps__subtitle:hover{
+    transform: scale(1.01);
 }
 .card_marketing__content{
     position: absolute;
@@ -298,15 +333,12 @@
     padding: 20rem 0 0 0;
     font-size: 12rem;
     font-weight: bold;
+    transition: all .2s ease-in-out;
 }
-.card_steps__step p{ 
-    padding-left: 7rem;
-    margin: 0;
-    line-height: 1.1;
- }
 .card_steps__subtitle{
     font-size: 3rem;
     padding: 0 1rem 3.5rem 1rem;
+    transition: all .2s ease-in-out;
 }
 .card_steps__step:nth-child(1){
     background-color: #6F63E9;
@@ -322,17 +354,19 @@
 .card_email{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     gap: 2rem;
     background-color: #F3487D;
     border-radius: 10px;
     margin-top: 45rem;
 }
 .card_email__img{
-    margin-top: -33%;
+    margin: -33% 0 -6rem -5rem;
 }
 .card_email__content{
-    padding: 7rem 0 1rem 0;
     overflow: hidden;
+    margin-left: -5rem;
+    padding: 1rem;
 }
 .card_email__text{
     color: var(--white);
@@ -351,42 +385,67 @@
 .card_email__form{
     position: relative;
     width: 90%;
+    transition: all .2s ease-in-out;
+}
+.card_email__form:hover{
+    transform: scale(1.02);
 }
 .card_email__form_text{
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 1.4rem 17rem 1.4rem 1.4rem;
     border: none;
     border-radius: 50px;
-    outline: none;
+    transition: all .2s ease-in-out;
 }
 .card_email__btn{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: .23rem;
+    top: .23rem;
     display: flex;
-    margin-right: .3rem;
+    border-radius: 2rem;
+    background-color: #F3487D;
 }
 .card_email__btn:hover{
-    cursor: pointer;
+    transform: scale(1.01);
+}
+.card_email__btn:hover .card_email__form_icon{
+    transition: all .5s ease-in-out;
+    transform: translate(-115px,0);
+    -webkit-transform: translate(-115px,0);
+    -o-transform: translate(-115px,0); 
+    -moz-transform: translate(-115px,0);
+}
+.card_email__btn:hover .card_email__form__text{
+    transition: all .5s ease-in-out;
+    transform: translate(30px,0);
+    -webkit-transform: translate(30px,0);
+    -o-transform: translate(30px,0); 
+    -moz-transform: translate(30px,0);
 }
 .card_email__form_btn{  
     position: relative;  
     padding: 0.5rem 4.5rem 0.5rem 1.5rem;
-    margin-top: .2rem;
     border: none;
-    border-radius: 18px;
-    background-color: #F3487D;
     color: var(--white);
 }
 .card_email__form_btn:hover{
     cursor: pointer;
 }
+.card_email__form__text{
+    transition: all .5s ease-in-out;
+}
+.card_email__form_text:focus {
+    transform: scale(1.005);
+    outline: none;
+    box-shadow: 0 0 10px #606060;
+  }
 .card_email__form_icon{
     position: absolute;
     right: -3%;
     bottom: -12.8%;
     width: 5rem;
+    transition: all .5s ease-in-out;
 }
 
 /* FAQ */
@@ -399,6 +458,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.faq__top:hover{
+    transform: scale(1.05);
 }
 .faq__back{
     font-size: 11.3rem;
@@ -418,6 +482,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 4rem;
+    padding: 0 1rem;
 }
 .faq__single{
     padding: 2rem 3rem;
@@ -425,12 +490,19 @@
     -webkit-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
     border-radius: 20px;
+    transition: all .2s ease-in-out;
 }
 .faq__single_top,
 .faq__multi_single{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all .2s ease-in-out;
+}
+.faq__multi_single:hover,
+.faq__single:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .faq__single_title{
     font-size: 2.2rem;
@@ -598,7 +670,7 @@
     }
     .card_email__img_container{
         position: absolute;
-        bottom: 15rem;
+        bottom: 25rem;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -606,9 +678,12 @@
         text-align: center;
         margin-bottom: 1rem;
     }
+    .card_email__img{
+        margin-left: 0;
+    }
     .card_email__content{
-        margin: 6rem auto 0 auto;
-        padding-bottom: 12rem;
+        padding: 10rem 1rem;
+        margin: 0 auto 0 auto;
         width: 80%;
     }
     .card_email__text,
@@ -733,9 +808,21 @@
     }
 }
 
+@media (max-width: 390px){
+    .hero__titleh{
+        font-size: 3.2rem;
+    }
+    .hero__titleh span{
+        font-size: 5.2rem;
+    }
+    .hero__paragraphh{
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 310px){
     .card_email__img_container{
-        bottom: 17rem;
+        bottom: 27rem;
     }
     .card_steps{
         display: block;
@@ -749,17 +836,5 @@
     .cards{
         word-wrap: break-word;
         padding: 0;
-    }
-}
-
-@media (max-width: 390px){
-    .hero__titleh{
-        font-size: 3.2rem;
-    }
-    .hero__titleh span{
-        font-size: 5.2rem;
-    }
-    .hero__paragraphh{
-        font-size: 1.3rem;
     }
 }

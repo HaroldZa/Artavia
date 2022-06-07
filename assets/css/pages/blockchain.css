@@ -134,6 +134,9 @@
     overflow: hidden;
     transition: .3s;
 }
+.slider__btn{
+    display: none;
+}
 .card:hover{
     transform: scale(1.05);
 }
@@ -248,10 +251,6 @@
     justify-content: center;
     transform-style: preserve-3d;
     perspective: 600px;
-    --items: 3;
-    --middle: 2;
-    --position: 1;
-    pointer-events: none;
 }
 @media (min-width: 991px){
     .first{
@@ -281,6 +280,8 @@
 .contact__form{
     margin: 0 auto;
     width: 50%;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
 }
 .contact__form_text{
     color: #606060;
@@ -288,24 +289,57 @@
     border: 1px solid rgba(96, 96, 96, .3);
     border-radius: 50px;
     width: 100%;
+    transition: all .5s ease-in-out;
 }
 .contact__btn{
     position: relative;
 }
 .contact__form_btn{
     position: absolute;
-    bottom: .3rem;
+    bottom: .5rem;
     right: .4rem;
-    padding: .7rem 6rem .7rem 2rem;
+    padding: .6rem 6rem .6rem 2rem;
     border-radius: 50px;
     background-color: #F3487D;
     color: var(--white);
 }
 .contact__form_icon{
     position: absolute;
-    bottom: -.25rem;
+    bottom: -.3rem;
     right: 0;
     width: 5.5rem;
+}
+.contact__form:hover{
+    transform: scale(1.02);
+}
+.contact__btn:hover .contact__form_icon{
+    transition: all .5s ease-in-out;
+    transform: translate(-135px,0);
+    -webkit-transform: translate(-135px,0);
+    -o-transform: translate(-135px,0); 
+    -moz-transform: translate(-135px,0);
+}
+.contact__btn:hover .card_email__form__text{
+    transition: all .5s ease-in-out;
+    transform: translate(30px,0);
+    -webkit-transform: translate(30px,0);
+    -o-transform: translate(30px,0); 
+    -moz-transform: translate(30px,0);
+}
+.contact__form_text{
+    transition: all .5s ease-in-out;
+}
+.contact__form_text:focus {
+    transform: scale(1.005);
+    outline: none;
+    box-shadow: 0 0 10px #606060;
+  }
+.contact__form_icon{
+    position: absolute;
+    right: -2%;
+    bottom: -8%;
+    width: 5rem;
+    transition: all .5s ease-in-out;
 }
 .mobile{
     display: none;
@@ -365,6 +399,18 @@
     .last{
         --position: 3;
     }
+    #carousel {
+        height: 55rem;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        position: relative;
+        z-index: 0;
+        pointer-events: none;
+        --items: 3;
+        --middle: 2;
+        --position: 1;
+    }
     .item {
         position: absolute;
         width: 300px;
@@ -390,6 +436,7 @@
         margin-top: -6rem !important;
     }
     .slider__btn {
+        display: block;
         position: absolute;
         top: 35%;
         display: flex;
@@ -406,14 +453,6 @@
     
     .slider__icon{
         width: 12rem;
-    }
-    #carousel {
-        height: 55rem;
-        width: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        position: relative;
-        z-index: 0;
     }
     .mobile{
         display: block;
