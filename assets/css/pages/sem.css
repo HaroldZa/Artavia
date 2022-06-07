@@ -268,8 +268,8 @@
         color: #606060;
     }
     .tools__img{
-        padding-top: 4rem;
-        width: 95%;
+        padding: 4rem 2rem 0 2rem;
+        width: auto;
         margin: 0 auto;
     }
     /* Strengths */
@@ -290,8 +290,8 @@
         grid-row: 1;
     }
     .strengths__img{
-        margin-top: 2rem;
-        width: 100%;
+        margin: 2rem auto 0 auto;
+        width: auto;
     }
     /* FAQ */
     .faq{
@@ -353,5 +353,12 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+    .tools__img{
+        min-width: 111.5%;
+        margin-left: -2.3rem;
+    }
+    .strengths__img{
+        min-width: 104%;
+        margin-left: -1rem;
+    }
 }

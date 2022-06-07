@@ -264,8 +264,8 @@
         box-shadow: none;
     }
     .card__img{
-        margin-top: 2rem;
-        width: 100%;
+        margin: 2rem auto 0 auto;
+        width: auto;
     }
     .card__paragraph{
         font-size: 1.9rem;
@@ -293,7 +293,7 @@
     }
     .tools__img{
         margin: -10rem auto 0 auto;
-        width: 90%;
+        width: auto;
     }
     /* FAQ */
     .faq{
