@@ -652,7 +652,7 @@ svg {
     }
     .hero__contact{
         display: none;
-    }
+    } 
 }
 
 @media (max-width: 660px){
@@ -669,13 +669,13 @@ svg {
         width: 90%;
     }
     .hero__paragraphh{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .hero__titleh{
-        font-size: 4.2rem;
+        font-size: 3.7rem;
     }
     .hero__titleh span{
-        font-size: 6.2rem;
+        font-size: 5.7rem;
     }
     .card_marketing__title{
         font-size: 2.6rem;
