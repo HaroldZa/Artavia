@@ -100,10 +100,12 @@ img {
     font-size: 5.4rem;
     font-weight: 800;
 }
-.hero__logo{
+
+.hero__logo {
     width: 20rem;
     height: 8rem;
 }
+
 .hero__paragraph {
     margin: 2rem auto 0 auto;
     width: 80%;
@@ -454,9 +456,11 @@ img {
     width: 100%;
     top: 3rem;
 }
-#liWebsite{
+
+#liWebsite {
     scroll-behavior: smooth;
 }
+
 .footer__content_mobile {
     display: none;
 }
@@ -540,8 +544,8 @@ img {
 .icons li {
     list-style: none;
 }
-  
-  .icons li a {
+
+.icons li a {
     text-align: center;
     width: 100%;
     height: 100%;
@@ -555,26 +559,29 @@ img {
     overflow: hidden;
     border: 3px solid transparent;
     z-index: 1;
-  }
-  .icons li:nth-child(1){
+}
+
+.icons li:nth-child(1) {
     width: 5rem;
-  }
-  .icons li:nth-child(4){
+}
+
+.icons li:nth-child(4) {
     margin-top: -.7rem;
-  }
-  .icons li a .icon {
+}
+
+.icons li a .icon {
     position: relative;
     color: #262626;
     transition: .5s;
     z-index: 3;
-  }
-  
-  .icons li a:hover .icon {
+}
+
+.icons li a:hover .icon {
     color: #fff;
     transform: rotateY(360deg);
-  }
-  
-  .icons li a:before {
+}
+
+.icons li a:before {
     content: "";
     position: absolute;
     top: 100%;
@@ -584,27 +591,27 @@ img {
     background: #f00;
     transition: .5s;
     z-index: 2;
-  }
-  
-  .icons li a:hover:before {
+}
+
+.icons li a:hover:before {
     top: 0;
-  }
-  
-  .icons li:nth-child(1) a:before{
+}
+
+.icons li:nth-child(1) a:before {
     background: #3b5999;
-  }
-  
-  .icons li:nth-child(2) a:before{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  }
-  
-  .icons li:nth-child(3) a:before {
+}
+
+.icons li:nth-child(2) a:before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.icons li:nth-child(3) a:before {
     background: #dd4b39;
-  }
-  
-  .icons li:nth-child(4) a:before {
+}
+
+.icons li:nth-child(4) a:before {
     background: hwb(55 19% 30%);
-  }
+}
 
 
 .faq__single__text {
@@ -689,39 +696,66 @@ details[open] {
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
+details p {}
 
 details[open] p {
     border-left: 2px solid #f73a7e;
     margin-left: 20px;
     padding-left: 25px;
-    -webkit-animation: fadein 2s; 
-       -moz-animation: fadein 2s;
-        -ms-animation: fadein 2s; 
-         -o-animation: fadein 2s; 
-            animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
 }
 
 .faq_right details[open] p {
@@ -758,7 +792,6 @@ details[open] summary:after {
 
 summary::-webkit-details-marker {
     display: none;
-
 }
 
 summary:after {
@@ -931,18 +964,20 @@ summary:after {
         color: var(--white);
     }
 
-    
-    .footer__menu_mobile{
+
+    .footer__menu_mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .menu_logo {
-        
+
         width: 15rem !important;
         height: 6rem !important;
         margin-top: 2rem;
     }
+
     .menu_social {
         width: 15rem;
         height: 2.48rem;
@@ -1084,16 +1119,19 @@ summary:after {
         transition: all .8s;
         padding-top: 0;
     }
+
     .scrolled .hero__bar_img,
-    .scrolled .menu__toggler{
+    .scrolled .menu__toggler {
         margin-top: -1rem;
         transition: all .8s;
     }
+
     .scrolled {
         transition: all .8s;
         height: 7.5rem;
         background-color: var(--purple);
     }
+
     .hero__menu {
         position: absolute;
         margin-left: 3rem;
