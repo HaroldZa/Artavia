@@ -184,17 +184,17 @@
 }
 
 /* Icons */
-.icons{
+.icons_card{
     margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3rem;
     text-align: center;
 }
-.icons_card span{
+.icons_card_card span{
     display: block;
 }
-.icons_text{
+.icons_card_text{
     font-size: 1.8rem;
     color: #999999;
     line-height: 1.2;
@@ -402,7 +402,7 @@
         grid-row: 1;
     }
     /* icons */
-    .icons{
+    .icons_card{
         padding: 0 2rem;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -427,11 +427,11 @@
         gap: 5rem;
     }
     /* icons */
-    .icons{
+    .icons_card{
         padding: 0 2rem;
         grid-template-columns: repeat(2, 1fr);
     }
-    .icons_card:nth-child(3){
+    .icons_card_card:nth-child(3){
         grid-row: 3/4;
     }
     /* target */
@@ -442,7 +442,7 @@
 
 @media (max-width: 600px){
     .card_email__cards,
-    .icons,
+    .icons_card,
     .target__cards{
         grid-template-columns: 1fr;
         row-gap: 2rem;

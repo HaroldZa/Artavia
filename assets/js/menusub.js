@@ -60,6 +60,18 @@ function menu(evt, menuName) {
   cont++;
 }
 
+var r1 = document.getElementById('review1');
+var r2 = document.getElementById('review2');
+
+review_go.addEventListener("click", function () {
+    r1.style.display = 'none';
+    r2.style.display = 'flex';
+})
+
+review_back.addEventListener("click", function () {
+    r1.style.display = 'flex';
+    r2.style.display = 'none';
+})
 function loadSlide(){
   document.getElementById('liWebsite').click();
   document.getElementById('liWebsite').click();

@@ -13,23 +13,26 @@
 <body class="ov">
     <header class="hero">
         <div class="container">
-            <div class="hero__bar">
-                <div class="hero__bar_img">
+            <div class="hero__bar" id="navscroll">
+                <div class="hero__bar_img" id="navimg">
                     <a href="index.html"><img class="hero__logo" src="assets/images/logo_png.png" alt="Artavia"></a>
                 </div>
-                <nav class="hero__nav">
+                <nav class="hero__nav" id="navbar">
                     <ul class="menuItems">
                         <li class="btntop hero__nav_items"><a href="index.html">Inicio</a></li>
-                        <li class="btntop hero__nav_items"><a class="">Programación</a>
+                        <li class="btntop hero__nav_items"><a>Programación</a>
+                            <div class="space"></div>
                             <ul>
                                 <div class="hero__subitems">
                                     <li>
-                                        <a class="subitems" href="desarrollo-de-plataformas.html">Desarrollo de plataformas</a>
+                                        <a class="subitems" href="desarrollo-de-plataformas.html">Desarrollo de
+                                            plataformas</a>
                                         <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
                                             cualquier tipo de plataforma</p>
                                     </li>
                                     <li>
-                                        <a class="subitems" href="desarrollo-de-blockchain.html">Desarrollo de Blockchain</a>
+                                        <a class="subitems" href="desarrollo-de-blockchain.html">Desarrollo de
+                                            Blockchain</a>
                                         <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
                                             inmutabilidad serán parte de tu proyecto. Estás empezando una UCO o STO?
                                             estamos listos para lanzarte por todo lo grande</p>
@@ -41,20 +44,66 @@
                                             sistema operativo, los lpimites los pones tu.</p>
                                     </li>
                                     <li>
-                                        <a class="subitems" href="desarrollo-de-paginas-web.html">Desarrollo de páginas web</a>
+                                        <a class="subitems" href="desarrollo-de-paginas-web.html">Desarrollo de páginas
+                                            web</a>
                                         <p class="hero__subitems_paragraph">Se diferente, se el rey de la fiesta, marca
                                             la diferencia y expresa la identidad de tu marca.</p>
                                     </li>
                                 </div>
                             </ul>
                         </li>
-                        <li class="hero__nav_items btntop"><a href="email-marketing.html">Marketing</a></li>
-                        <li class="hero__nav_items btntop"><a href="diseno-grafico-ui-uix.html">Diseño gráfico</a></li>
+                        <li class="btntop hero__nav_items"><a>Marketing</a>
+                            <div class="space"></div>
+                            <ul>
+                                <div class="hero__subitems">
+                                    <li>
+                                        <a class="subitems" href="posicionamiento-seo-en-las-palmas.html">Posicionamiento
+                                            SEO</a>
+                                        <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
+                                            cualquier tipo de plataforma</p>
+                                    </li>
+                                    <li>
+                                        <a class="subitems" href="comunnity-manager.html">Community Manager</a>
+                                        <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
+                                            inmutabilidad serán parte de tu proyecto. Estás empezando una UCO o STO?
+                                            estamos listos para lanzarte por todo lo grande</p>
+                                    </li>
+                                    <li class="border"></li>
+                                    <li>
+                                        <a class="subitems" href="email-marketing.html">Email Marketing</a>
+                                        <p class="hero__subitems_paragraph">Se ejecutará tu APP para cualquier tipo de
+                                            sistema operativo, los lpimites los pones tu.</p>
+                                    </li>
+                                    <li>
+                                        <a class="subitems" href="posicionamiento-sem-en-las-palmas.html">Posicionamiento
+                                            SEM</a>
+                                        <p class="hero__subitems_paragraph">Se diferente, se el rey de la fiesta, marca
+                                            la diferencia y expresa la identidad de tu marca.</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="btntop hero__nav_items"><a>Diseño gráfico</a>
+                            <div class="space"></div>
+                            <ul>
+                                <div class="hero__subitems">
+                                    <li>
+                                        <a class="subitems" href="diseno-grafico-ui-uix.html">Diseño de plataformas</a>
+                                        <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
+                                            cualquier tipo de plataforma</p>
+                                    </li>
+                                    <li>
+                                        <a class="subitems" href="video-maker.html">Video Maker</a>
+                                        <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
+                                            inmutabilidad serán parte de tu proyecto.</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="btntop hero__nav_items"><a href="subvenciones.html">Subvenciones</a></li>
                     </ul>
                 </nav>
-                <div class="hero__bar_menu desktop_menu">
-                    <img class="hero__menu" src="assets/images/icons/menu.png" alt="">
-                </div>
+    
                 <div class="menu mobile_menu">
                     <h4 style="text-align: center; margin-bottom: 2rem;">Menu</h4>
                     <p><a href="index.html">Inicio</a></p>
@@ -65,13 +114,41 @@
                         <li><a href="desarrollo-de-apps.html">APP's</a></li>
                         <li><a href="desarrollo-de-paginas-web.html">Páginas web</a></li>
                     </div>
-                    <p><a href="email-marketing.html">Marketing</a></p>
-                    <p><a href="diseno-grafico-ui-uix.html">Diseño Gráfico</a></p>
-                    <img class="menu_logo" style="margin: 2rem 0;" src="assets/images/logo_b.png" alt="">
-                    <img class="menu_social" src="assets/images/icons/icon_rrss.png" alt="">
+                    <p class="submenu">Marketing</p>
+                    <div class="menu__submenu">
+                        <li><a href="posicionamiento-seo-en-las-palmas.html">Posicionamiento SEO</a></li>
+                        <li><a href="comunnity-manager.html">Community Manager</a></li>
+                        <li><a href="email-marketing.html">Email Marketing</a></li>
+                        <li><a href="posicionamiento-sem-en-las-palmas.html">Posicionamiento SEM</a></li>
+                    </div>
+                    <p class="submenu">Diseño Gráfico</p>
+                    <div class="menu__submenu">
+                        <li><a href="diseno-grafico-ui-uix.html">Diseño de plataformas</a></li>
+                        <li><a href="video-maker.html">Video Maker</a></li>
+                    </div>
+                    <p><a href="subvenciones.html">Subvenciones</a></p>
+                    <div class="footer__menu_mobile">
+                        <img class="menu_logo" src="assets/images/logo_b.png" alt="">
+                        <div class="footer__icons">
+                            <ul class="icons">
+                                <li>
+                                    <a href="#"><img class="icon" src="assets/images/icons/icon.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="icon" src="assets/images/icons/icon2.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="icon" src="assets/images/icons/icon3.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="icon" src="assets/images/icons/icon4.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="menu__toggler mobile_menu"><span></span></div>
-            </div> 
+            </div>
 
             <section class="hero__info ">
                 <h1 class="hero__title wow animate__animated animate__fadeInLeft">Desarrollo blockchain en Las Palmas</h1>
@@ -285,7 +362,22 @@
                         <p>Av. Vicente Sos Baynat S/N Edificio Espaitec 1, 12071</p>
                         <p>Castelló de la Plana, Castelló</p>
                     </div>
-                    <img class="footer__icons" src="assets/images/icons/icon_rrss.png" alt="">
+                    <div class="footer__icons animate__animated animate__bounce animate__delay-2s">
+                        <ul class="icons">
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon2.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon3.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon4.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__more">
                     <div class="footer__services wow animate__animated animate__fadeInLeft">
@@ -328,7 +420,22 @@
                     <p>Av. Vicente Sos Baynat S/N Edificio Espaitec 1, 12071</p>
                     <p>Castelló de la Plana, Castelló</p>
                 </div>
-                <img class="footer__icons" src="assets/images/icons/icon_rrss.png" alt="">
+                <div class="footer__icons">
+                    <ul class="icons">
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon2.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon3.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon4.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__more">
                 <div class="footer__services wow animate__animated animate__fadeInLeft">
