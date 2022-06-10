@@ -66,11 +66,15 @@ var r2 = document.getElementById('review2');
 review_go.addEventListener("click", function () {
     r1.style.display = 'none';
     r2.style.display = 'flex';
+    r1.style.animation = 'fade_in_show 1.5s'
+    r2.style.animation = 'fade_in_show 1.5s'
 })
 
 review_back.addEventListener("click", function () {
     r1.style.display = 'flex';
     r2.style.display = 'none';
+    r1.style.animation = 'fade_in_show 1.5s'
+    r2.style.animation = 'fade_in_show 1.5s'
 })
 function loadSlide(){
   document.getElementById('liWebsite').click();
