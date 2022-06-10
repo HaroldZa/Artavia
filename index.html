@@ -7,104 +7,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artavia</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pages/home.css">
-</head> 
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+</head>
 
 <body>
     <header class="hero">
-        <div class="container">
-            <div class="hero__bar">
-                <div class="hero__bar_img">
-                    <a href="index.html"><img class="hero__logo" src="assets/images/logo_png.png" alt="Artavia"></a>
+        <div class="hero__bar" id="navscroll">
+            <div class="hero__bar_img" id="navimg">
+                <a href="index.html"><img class="hero__logo" src="assets/images/logo_png.png" alt="Artavia"></a>
+            </div>
+            <nav class="hero__nav" id="navbar">
+                <ul class="menuItems">
+                    <li class="btntop hero__nav_items"><a href="index.html">Inicio</a></li>
+                    <li class="btntop hero__nav_items"><a>Programación</a>
+                        <div class="space"></div>
+                        <ul>
+                            <div class="hero__subitems">
+                                <li>
+                                    <a class="subitems" href="desarrollo-de-plataformas.html">Desarrollo de
+                                        plataformas</a>
+                                    <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
+                                        cualquier tipo de plataforma</p>
+                                </li>
+                                <li>
+                                    <a class="subitems" href="desarrollo-de-blockchain.html">Desarrollo de
+                                        Blockchain</a>
+                                    <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
+                                        inmutabilidad serán parte de tu proyecto. Estás empezando una UCO o STO?
+                                        estamos listos para lanzarte por todo lo grande</p>
+                                </li>
+                                <li class="border"></li>
+                                <li>
+                                    <a class="subitems" href="desarrollo-de-apps.html">Desarrollo de APP's</a>
+                                    <p class="hero__subitems_paragraph">Se ejecutará tu APP para cualquier tipo de
+                                        sistema operativo, los lpimites los pones tu.</p>
+                                </li>
+                                <li>
+                                    <a class="subitems" href="desarrollo-de-paginas-web.html">Desarrollo de páginas
+                                        web</a>
+                                    <p class="hero__subitems_paragraph">Se diferente, se el rey de la fiesta, marca
+                                        la diferencia y expresa la identidad de tu marca.</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="btntop hero__nav_items"><a>Marketing</a>
+                        <div class="space"></div>
+                        <ul>
+                            <div class="hero__subitems">
+                                <li>
+                                    <a class="subitems" href="posicionamiento-seo-en-las-palmas.html">Posicionamiento
+                                        SEO</a>
+                                    <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
+                                        cualquier tipo de plataforma</p>
+                                </li>
+                                <li>
+                                    <a class="subitems" href="comunnity-manager.html">Community Manager</a>
+                                    <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
+                                        inmutabilidad serán parte de tu proyecto. Estás empezando una UCO o STO?
+                                        estamos listos para lanzarte por todo lo grande</p>
+                                </li>
+                                <li class="border"></li>
+                                <li>
+                                    <a class="subitems" href="email-marketing.html">Email Marketing</a>
+                                    <p class="hero__subitems_paragraph">Se ejecutará tu APP para cualquier tipo de
+                                        sistema operativo, los lpimites los pones tu.</p>
+                                </li>
+                                <li>
+                                    <a class="subitems" href="posicionamiento-sem-en-las-palmas.html">Posicionamiento
+                                        SEM</a>
+                                    <p class="hero__subitems_paragraph">Se diferente, se el rey de la fiesta, marca
+                                        la diferencia y expresa la identidad de tu marca.</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="btntop hero__nav_items"><a>Diseño gráfico</a>
+                        <div class="space"></div>
+                        <ul>
+                            <div class="hero__subitems">
+                                <li>
+                                    <a class="subitems" href="diseno-grafico-ui-uix.html">Diseño de plataformas</a>
+                                    <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
+                                        cualquier tipo de plataforma</p>
+                                </li>
+                                <li>
+                                    <a class="subitems" href="video-maker.html">Video Maker</a>
+                                    <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
+                                        inmutabilidad serán parte de tu proyecto.</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="btntop hero__nav_items"><a href="subvenciones.html">Subvenciones</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu mobile_menu">
+                <h4 style="text-align: center; margin-bottom: 2rem;">Menu</h4>
+                <p><a href="index.html">Inicio</a></p>
+                <p class="submenu">Programación</p>
+                <div class="menu__submenu">
+                    <li><a href="desarrollo-de-plataformas.html">Plataformas</a></li>
+                    <li><a href="desarrollo-de-blockchain.html">Blockchain</a></li>
+                    <li><a href="desarrollo-de-apps.html">APP's</a></li>
+                    <li><a href="desarrollo-de-paginas-web.html">Páginas web</a></li>
                 </div>
-                <nav class="hero__nav">
-                    <ul class="menuItems">
-                        <li class="btntop hero__nav_items"><a href="index.html">Inicio</a></li>
-                        <li class="btntop hero__nav_items"><a class="">Programación</a>
-                            <ul>
-                                <div class="hero__subitems">
-                                    <li>
-                                        <a class="subitems" href="desarrollo-de-plataformas.html">Desarrollo de plataformas</a>
-                                        <p class="hero__subitems_paragraph">Planea y ejecuta con nosotros de cero a cien
-                                            cualquier tipo de plataforma</p>
-                                    </li>
-                                    <li>
-                                        <a class="subitems" href="desarrollo-de-blockchain.html">Desarrollo de Blockchain</a>
-                                        <p class="hero__subitems_paragraph">La trazabilidad, transparencia e
-                                            inmutabilidad serán parte de tu proyecto. Estás empezando una UCO o STO?
-                                            estamos listos para lanzarte por todo lo grande</p>
-                                    </li>
-                                    <li class="border"></li>
-                                    <li>
-                                        <a class="subitems" href="desarrollo-de-apps.html">Desarrollo de APP's</a>
-                                        <p class="hero__subitems_paragraph">Se ejecutará tu APP para cualquier tipo de
-                                            sistema operativo, los lpimites los pones tu.</p>
-                                    </li>
-                                    <li>
-                                        <a class="subitems" href="desarrollo-de-paginas-web.html">Desarrollo de páginas web</a>
-                                        <p class="hero__subitems_paragraph">Se diferente, se el rey de la fiesta, marca
-                                            la diferencia y expresa la identidad de tu marca.</p>
-                                    </li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="hero__nav_items btntop"><a href="email-marketing.html">Marketing</a></li>
-                        <li class="hero__nav_items btntop"><a href="diseno-grafico-ui-uix.html">Diseño gráfico</a></li>
-                    </ul>
-                </nav>
-                <div class="hero__bar_menu desktop_menu">
-                    <img class="hero__menu" src="assets/images/icons/menu.png" alt="">
+                <p class="submenu">Marketing</p>
+                <div class="menu__submenu">
+                    <li><a href="posicionamiento-seo-en-las-palmas.html">Posicionamiento SEO</a></li>
+                    <li><a href="comunnity-manager.html">Community Manager</a></li>
+                    <li><a href="email-marketing.html">Email Marketing</a></li>
+                    <li><a href="posicionamiento-sem-en-las-palmas.html">Posicionamiento SEM</a></li>
                 </div>
-                <div class="menu mobile_menu">
-                    <h4 style="text-align: center; margin-bottom: 2rem;">Menu</h4>
-                    <p><a href="index.html">Inicio</a></p>
-                    <p class="submenu">Programación</p>
-                    <div class="menu__submenu">
-                        <li><a href="desarrollo-de-plataformas.html">Plataformas</a></li>
-                        <li><a href="desarrollo-de-blockchain.html">Blockchain</a></li>
-                        <li><a href="desarrollo-de-apps.html">APP's</a></li>
-                        <li><a href="desarrollo-de-paginas-web.html">Páginas web</a></li>
+                <p class="submenu">Diseño Gráfico</p>
+                <div class="menu__submenu">
+                    <li><a href="diseno-grafico-ui-uix.html">Diseño de plataformas</a></li>
+                    <li><a href="video-maker.html">Video Maker</a></li>
+                </div>
+                <p><a href="subvenciones.html">Subvenciones</a></p>
+                <div class="footer__menu_mobile">
+                    <img class="menu_logo" src="assets/images/logo_b.png" alt="">
+                    <div class="footer__icons">
+                        <ul class="icons">
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon2.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon3.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon4.png" alt=""></a>
+                            </li>
+                        </ul>
                     </div>
-                    <p><a href="email-marketing.html">Marketing</a></p>
-                    <p><a href="diseno-grafico-ui-uix.html">Diseño Gráfico</a></p>
-                    <img class="menu_logo" style="margin: 2rem 0;" src="assets/images/logo_b.png" alt="">
-                    <img class="menu_social" src="assets/images/icons/icon_rrss.png" alt="">
                 </div>
-                <div class="menu__toggler mobile_menu"><span></span></div>
-            </div> <!-- End Bar -->
-            <section class="hero__infoh">
-                <div class="hero__texth">
-                    <h1 class="hero__titleh animate__animated animate__slideInDown">Agencia de <span>Marketing</span> <span>Digital</span></h1>
-                    <p class="hero__paragraphh animate__animated animate__fadeInLeft">
-                        <span>Estrategias a medida para hacer crecer tu negocio.</span>
-                        <span>Mezclamos lo digital y lo convencional para maximizar tus rendimientos.</span>
-                    </p>
-                    <div class="hero__contact animate__animated animate__fadeInLeft">
-                        <p class="hero__directorh">Director</p>
-                        <div class="center">
-                            <button class="btn">
-                              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            </div>
+            <div class="menu__toggler mobile_menu"><span></span></div>
+        </div> <!-- End Bar -->
+        <section class="hero__infoh container">
+            <div class="hero__texth">
+                <h1 class="hero__titleh animate__animated animate__slideInDown">Agencia de <span>Marketing</span>
+                    <span>Digital</span></h1>
+                <p class="hero__paragraphh animate__animated animate__fadeInLeft">
+                    <span>Estrategias a medida para hacer crecer tu negocio.</span>
+                    <span>Mezclamos lo digital y lo convencional para maximizar tus rendimientos.</span>
+                </p>
+                <div class="hero__contact animate__animated animate__fadeInLeft">
+                    <p class="hero__directorh">Director</p>
+                    <div class="center">
+                        <button class="btn">
+                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                              </svg>
-                              <span>Rubén Gracida</span>
-                            </button>
-                          </div>
+                            </svg>
+                            <span>Rubén Gracida</span>
+                        </button>
                     </div>
                 </div>
-                <img class="hero__imgh animate__animated animate__slideInRight" src="assets/images/h_40.png" alt="">
-            </section> <!-- End Header Text -->
-        </div>
+            </div>
+            <img class="hero__imgh animate__animated animate__slideInRight" src="assets/images/h_40.png" alt="">
+        </section> <!-- End Header Text -->
     </header>
-    
+
     <section class="card_marketing container">
         <div class="card__marketing_left">
             <div class="card_marketing__purple"></div>
             <div class="card_marketing__gray"></div>
             <div class="card_marketing__content ov">
-                <h2 class="card_marketing__title wow animate__animated animate__fadeInLeft">Buscas una agencia especializada en marketing?</h2>
+                <h2 class="card_marketing__title wow animate__animated animate__fadeInLeft">Buscas una agencia
+                    especializada en marketing?</h2>
                 <p class="card_marketing__paragraph wow animate__animated animate__fadeInLeft">
                     <span>Cada una de nuestras areas se encuentra formado por diversos expertos para máximizar y
                         asegurar el éxito.</span>
@@ -113,8 +190,8 @@
                 </p>
             </div>
         </div>
-        <div class="card_marketing__img wow animate__animated animate__zoomIn" ></div>
-    </section> 
+        <div class="card_marketing__img wow animate__animated animate__zoomIn"></div>
+    </section>
 
     <main class="container">
         <div class="cards">
@@ -128,7 +205,7 @@
                 </div>
                 <div class="card__img"></div>
             </div>
-            <div class="card wow animate__animated animate__zoomIn">
+            <div class="card wow animate__animated animate__fadeInLeft">
                 <div class="card__content border_right">
                     <img class="card__icon" src="assets/images/icons/i_2.png" alt="">
                     <h3 class="card__title">Analisis de datos</h3>
@@ -158,7 +235,7 @@
                 </div>
                 <div class="card__img"></div>
             </div>
-            <div class="card wow animate__animated animate__zoomIn">
+            <div class="card wow animate__animated animate__fadeInRight">
                 <div class="card__content border_right">
                     <img class="card__icon" src="assets/images/icons/i_.png" alt="">
                     <h3 class="card__title">Analisis de datos</h3>
@@ -183,23 +260,27 @@
 
     <section class="card_work">
         <div class="container">
-            <main class="card_work__content container" id="carousel">
-                <div id="it1" class="item card_work__card first wow animate__animated animate__zoomIn" >
+            <main class="card_work__content container" id="carousel" ontouchstart="touchStart(event)"
+                ontouchmove="touchMove(event)" ontouchend="touchEnd()">
+                <div id="it1" class="item card_work__card first wow animate__animated animate__heartBeat">
                     <img class="card_work__icon" src="assets/images/icons/h_37.png" alt="">
                     <h3 class="card_work__title">Metodología de trabajo</h3>
-                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
+                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los
+                        mismos,
                         esto garantiza la satisfacción de nuestros clientes</p>
                 </div>
-                <div id="it2" class="item card_work__card first wow animate__animated animate__zoomIn">
+                <div id="it2" class="item card_work__card first wow animate__animated animate__heartBeat">
                     <img class="card_work__icon" src="assets/images/icons/h_38.png" alt="">
                     <h3 class="card_work__title">Metodología de trabajo</h3>
-                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
+                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los
+                        mismos,
                         esto garantiza la satisfacción de nuestros clientes</p>
                 </div>
-                <div id="it3" class="item card_work__card first wow animate__animated animate__zoomIn">
+                <div id="it3" class="item card_work__card first wow animate__animated animate__heartBeat">
                     <img class="card_work__icon" src="assets/images/icons/h_39.png" alt="">
                     <h3 class="card_work__title">Metodología de trabajo</h3>
-                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los mismos,
+                    <p class="card_work__paragraph">La clave del éxito de nuestros proyectos son la gestión de los
+                        mismos,
                         esto garantiza la satisfacción de nuestros clientes</p>
                 </div>
             </main>
@@ -208,16 +289,19 @@
                 <img id="go" class="slider__icon" src="assets/images/icons/f_2.png" alt="">
             </div>
         </div>
-        </section>
-    
+    </section>
+
     <section class="card_subwork container">
         <div class="card_subwork__content">
-            <img class="card_subwork__img wow animate__animated animate__zoomIn" src="assets/images/f_3.png" alt="" data-aos="zoom-in-right">
+            <img class="card_subwork__img wow animate__animated animate__zoomIn" src="assets/images/f_3.png" alt=""
+                data-aos="zoom-in-right">
             <div class="card_subwork__text">
                 <h3 class="card_subwork__title wow animate__animated animate__fadeInRight">Trabajo Personalizado</h3>
-                <h4 class="card_subwork__subtitle wow animate__animated animate__fadeInRight">Nuestra metodología de trabajo garantiza una perfecta ejecución y una
+                <h4 class="card_subwork__subtitle wow animate__animated animate__fadeInRight">Nuestra metodología de
+                    trabajo garantiza una perfecta ejecución y una
                     gran satisfacción</h4>
-                <p class="card_subwork__paragraph wow animate__animated animate__fadeInRight">El contenido, lugar y en el momento correcto. Optimizamos
+                <p class="card_subwork__paragraph wow animate__animated animate__fadeInRight">El contenido, lugar y en
+                    el momento correcto. Optimizamos
                     continuamente estrategias de marketing, campañas y páginas en base a la información de datos(data
                     insights).</p>
             </div>
@@ -272,9 +356,11 @@
                     <div class="faq-list">
                         <div>
                             <details open>
-                                <summary class="faq__single_title">¿Qué es el marketing  digital?</summary>
-                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a nuestro
-                                    público objetivo con la intención de dar a conocer y vender un producto o servicio, tambien nos
+                                <summary class="faq__single_title">¿Qué es el marketing digital?</summary>
+                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a
+                                    nuestro
+                                    público objetivo con la intención de dar a conocer y vender un producto o servicio,
+                                    tambien nos
                                     sirve para afianzar nuestra marca en el mercado.</p>
                             </details>
                         </div>
@@ -284,11 +370,14 @@
             <div class="faq__multi wow animate__animated animate__lightSpeedInRight animate__delay-1s">
                 <div class="faq__multi_single">
                     <div class="faq-list">
-                        <div  class="faq_right">
+                        <div class="faq_right">
                             <details>
-                                <summary class="faq__multi_title">¿Por qué contratar a una agencia de marketing?</summary>
-                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a nuestro
-                                    público objetivo con la intención de dar a conocer y vender un producto o servicio, tambien nos
+                                <summary class="faq__multi_title">¿Por qué contratar a una agencia de marketing?
+                                </summary>
+                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a
+                                    nuestro
+                                    público objetivo con la intención de dar a conocer y vender un producto o servicio,
+                                    tambien nos
                                     sirve para afianzar nuestra marca en el mercado.</p>
                             </details>
                         </div>
@@ -298,9 +387,12 @@
                     <div class="faq-list">
                         <div class="faq_right">
                             <details>
-                                <summary class="faq__multi_title">¿La publicidad para mi empresa o proyecto es buena?</summary>
-                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a nuestro
-                                    público objetivo con la intención de dar a conocer y vender un producto o servicio, tambien nos
+                                <summary class="faq__multi_title">¿La publicidad para mi empresa o proyecto es buena?
+                                </summary>
+                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a
+                                    nuestro
+                                    público objetivo con la intención de dar a conocer y vender un producto o servicio,
+                                    tambien nos
                                     sirve para afianzar nuestra marca en el mercado.</p>
                             </details>
                         </div>
@@ -310,9 +402,11 @@
                     <div class="faq-list">
                         <div class="faq_right">
                             <details>
-                                <summary class="faq__multi_title">¿Es necesario desarrollar software a medida?</summary>
-                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a nuestro
-                                    público objetivo con la intención de dar a conocer y vender un producto o servicio, tambien nos
+                                <summary class="faq__multi_title" >¿Es necesario desarrollar software a medida?</summary>
+                                <p class="faq-content">Es el conjunto de estrategias que permite segmentar y conocer a
+                                    nuestro
+                                    público objetivo con la intención de dar a conocer y vender un producto o servicio,
+                                    tambien nos
                                     sirve para afianzar nuestra marca en el mercado.</p>
                             </details>
                         </div>
@@ -337,7 +431,22 @@
                         <p>Av. Vicente Sos Baynat S/N Edificio Espaitec 1, 12071</p>
                         <p>Castelló de la Plana, Castelló</p>
                     </div>
-                    <img class="footer__icons" src="assets/images/icons/icon_rrss.png" alt="">
+                    <div class="footer__icons animate__animated animate__bounce animate__delay-2s">
+                        <ul class="icons">
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon2.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon3.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/icon4.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__more">
                     <div class="footer__services wow animate__animated animate__fadeInLeft">
@@ -380,7 +489,22 @@
                     <p>Av. Vicente Sos Baynat S/N Edificio Espaitec 1, 12071</p>
                     <p>Castelló de la Plana, Castelló</p>
                 </div>
-                <img class="footer__icons" src="assets/images/icons/icon_rrss.png" alt="">
+                <div class="footer__icons">
+                    <ul class="icons">
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon2.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon3.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/icon4.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__more">
                 <div class="footer__services wow animate__animated animate__fadeInLeft">

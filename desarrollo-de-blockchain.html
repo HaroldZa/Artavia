@@ -176,7 +176,7 @@
                 </div>
                 <div class="card__img"></div>
             </div>
-            <div class="card wow animate__animated animate__zoomIn">
+            <div class="card wow animate__animated animate__fadeInLeft">
                 <div class="card__content border_right">
                     <img class="card__icon" src="assets/images/icons/img_40.png" alt="">
                     <h3 class="card__title">Desarrollo de Apps</h3>
@@ -204,7 +204,7 @@
                 </div>
                 <div class="card__img"></div>
             </div>
-            <div class="card wow animate__animated animate__zoomIn">
+            <div class="card wow animate__animated animate__fadeInRight">
                 <div class="card__content border_right">
                     <img class="card__icon" src="assets/images/icons/img_43.png" alt="">
                     <h3 class="card__title">Asesoramiento legal</h3>
@@ -227,25 +227,28 @@
     </main>
 
     <section class="card_work">
-        <main class="card_work__content container" id="carousel">
-            <div id="it1" class="item card_work__card first wow animate__animated animate__zoomIn transcale">
+        <main class="card_work__content container" id="carousel"
+        ontouchstart="touchStart(event)"
+            ontouchmove="touchMove(event)"
+            ontouchend="touchEnd()">
+            <div id="it1" class="item card_work__card first wow animate__animated animate__heartBeat ">
                 <img class="card_work__icon" src="assets/images/icons/img_45.png" alt="">
                 <h3 class="card_work__title">Fiabilidad</h3>
                 <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
             </div>
-            <div id="it2" class="item card_work__card first wow animate__animated animate__zoomIn transcale">
+            <div id="it2" class="item card_work__card first wow animate__animated animate__heartBeat ">
                 <img class="card_work__icon" src="assets/images/icons/img_46.png" alt="">
                 <h3 class="card_work__title">Soporte</h3>
                 <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
             </div>
-            <div id="it3" class="item card_work__card first wow animate__animated animate__zoomIn transcale">
+            <div id="it3" class="item card_work__card first wow animate__animated animate__heartBeat">
                 <img class="card_work__icon" src="assets/images/icons/img_47.png" alt="">
                 <h3 class="card_work__title">Asesoramiento</h3>
                 <p class="card_work__paragraph">Realizamos tests a todo nuestro código, y antes de subirlo a la red, realizamos una auditoría externa de confianza.</p>
             </div>
         </main>
         <img id="back" class="slider__icon mobile" src="assets/images/icons/f_04.png" alt="">
-        <div class="slider__btn wow animate__animated animate__zoomIn">
+        <div class="slider__btn wow animate__animated animate__heartBeat">
             <img id="go" class="slider__icon mobile" src="assets/images/icons/f_05.png" alt="">
         </div>
     </section>
@@ -255,7 +258,7 @@
             <h2 class="contact__title wow animate__animated animate__fadeInLeft">¿Aún no te hemos convencido?</h2>
             <p class="contact__paragraph wow animate__animated animate__fadeInRight">Contacta con nosotros para resolver todas tus dudas pendientes y encontrar la mejor solución.</p>
         </div>
-        <form class="contact__form wow animate__animated animate__zoomIn">
+        <form class="contact__form wow animate__animated animate__fadeInLeft">
             <input class="contact__form_text" type="text" placeholder="Correo electronico">
             <div class="contact__btn">
                 <a href="#" class="contact__form_btn">
@@ -371,7 +374,7 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/sliderbtn.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>

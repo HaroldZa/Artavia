@@ -125,18 +125,21 @@
     </section>
 
     <section class="card_work">
-        <main class="card_work__content container" id="carousel">
-            <div id="it1" class="item card_work__card first wow animate__animated animate__zoomIn transcale">
+        <main class="card_work__content container" id="carousel" 
+        ontouchstart="touchStart(event)"
+        ontouchmove="touchMove(event)"
+        ontouchend="touchEnd()">
+            <div id="it1" class="item card_work__card first wow animate__animated animate__heartBeat">
                 <img class="card_work__icon" src="assets/images/icons/img_52.png" alt="">
                 <h3 class="card_work__title"> <span>App</span>  Nativas</h3>
                 <p class="card_work__paragraph">Una APP es imprescindible para llegar a todos tus clientes. Te ofrecemos diseños optimizados para cada sistema operativo.</p>
             </div>
-            <div id="it2" class="item card_work__card first wow animate__animated animate__zoomIn transcale">
+            <div id="it2" class="item card_work__card first wow animate__animated animate__heartBeat">
                 <img class="card_work__icon" src="assets/images/icons/img_53.png" alt="">
                 <h3 class="card_work__title"><span>App</span> Híbridas</h3>
                 <p class="card_work__paragraph">Una APP es imprescindible para llegar a todos tus clientes. Te ofrecemos diseños optimizados para cada sistema operativo.</p>
             </div>
-            <div id="it3" class="item card_work__card first wow animate__animated animate__zoomIn transcale">
+            <div id="it3" class="item card_work__card first wow animate__animated animate__heartBeat">
                 <img class="card_work__icon" src="assets/images/icons/img_54.png" alt="">
                 <h3 class="card_work__title"><span>Web</span> App</h3>
                 <p class="card_work__paragraph">Una APP es imprescindible para llegar a todos tus clientes. Te ofrecemos diseños optimizados para cada sistema operativo.</p>
@@ -151,19 +154,19 @@
     <section class="works container">
         <div class="works__text">
             <h3 class="works__title wow animate__animated animate__fadeInLeft">Nuestros trabajos</h3>
-            <span class="wow animate__animated animate__zoomIn">Últimas aplicaciones móviles desarrolladas</span>
+            <span class="wow animate__animated animate__fadeInRight">Últimas aplicaciones móviles desarrolladas</span>
         </div>
         <div class="works__cards">
-            <div class="works__card transcale wow animate__animated animate__zoomIn">
+            <div class="works__card transcale wow animate__animated animate__fadeInLeft">
                 <img class="works__icon" src="assets/images/icons/img_alterno.png" alt="">
             </div>
-            <div class="works__card transcale wow animate__animated animate__zoomIn">
+            <div class="works__card transcale wow animate__animated animate__fadeInRight">
                 <img class="works__icon" src="assets/images/icons/img_alterno.png" alt="">
             </div>
-            <div class="works__card transcale wow animate__animated animate__zoomIn">
+            <div class="works__card transcale wow animate__animated animate__fadeInRight">
                 <img class="works__icon" src="assets/images/icons/img_alterno.png" alt="">
             </div>
-            <div class="works__card transcale wow animate__animated animate__zoomIn">
+            <div class="works__card transcale wow animate__animated animate__fadeInRight">
                 <img class="works__icon" src="assets/images/icons/img_alterno.png" alt="">
             </div>
         </div>
@@ -330,7 +333,7 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/sliderbtn.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>

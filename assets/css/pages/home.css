@@ -149,6 +149,7 @@ svg {
     column-gap: 6rem;
     row-gap: 5rem;
     padding: 0 2rem 3rem 2rem;
+    
 }
 .card{
     display: grid;
@@ -160,10 +161,9 @@ svg {
     transform: scale(1.05);
 }
 .card__content {
+    min-height: 38rem;
     text-align: center;
     line-height: 1.2;
-    width: auto;
-    height: auto;
     position: relative;
     padding: 5rem 4rem 0 4rem;
     color: #606060;
@@ -403,14 +403,15 @@ svg {
 }
 .card_email__btn{
     position: absolute;
-    right: .23rem;
-    top: .23rem;
+    right: 0.5%;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     border-radius: 2rem;
     background-color: #F3487D;
 }
 .card_email__btn:hover{
-    transform: scale(1.01);
+    transform: translateY(-50%) scale(1.01);
 }
 .card_email__btn:hover .card_email__form_icon{
     transition: all .5s ease-in-out;
@@ -449,89 +450,6 @@ svg {
     bottom: -12.8%;
     width: 5rem;
     transition: all .5s ease-in-out;
-}
-
-/* FAQ */
-.faq{
-    margin-top: 4rem;
-    overflow: hidden;
-}
-.faq__top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    transition: all .2s ease-in-out;
-}
-.faq__top:hover{
-    transform: scale(1.05);
-}
-.faq__back{
-    font-size: 11.3rem;
-    font-weight: 100;
-    color: #E6E6E6;
-}
-.faq__title{
-    font-size: 3.9rem;
-    position: absolute;
-    top: 4.5rem;
-    margin: 0 auto;
-    color: #F3487D;
-    font-weight: 800;
-}
-.faq__content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 4rem;
-    padding: 0 1rem;
-}
-.faq__single{
-    transition: all .2s ease-in-out;
-}
-.faq__single_content{
-    border-radius: 20px;
-    padding: 2rem 3rem;
-    box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
-}
-.faq__multi_single{
-    padding-right: 3rem;
-}
-.faq__single_top,
-.faq__multi_single{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all .2s ease-in-out;
-}
-.faq__multi_single:hover,
-.faq__single:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.faq__single_title{
-    font-size: 2.2rem;
-    color: #6E62E8;
-}
-.faq__single_icon,
-.faq__multi_icon{
-    width: 3rem;
-}
-.faq__multi_single{
-    margin: 1rem 0 1.8rem 0;
-}
-.faq__single__text{
-    line-height: 1.2;
-    color: #606060;
-}
-.faq__multi_title{
-    font-size: 2rem;
-    font-weight: 400;
-    color: #606060;
-    padding-right: 1rem;
 }
 
 @media (max-width: 1165px){
@@ -591,7 +509,6 @@ svg {
         --items: 3;
         --middle: 2;
         --position: 1;
-        pointer-events: none;
         overflow-y: hidden;
         overflow-x: hidden;
     
@@ -604,8 +521,12 @@ svg {
         --r: calc(var(--position) - var(--offset));
         transition: all 0.25s linear;
         transform: translateX(calc(-350px * var(--r)));
+        pointer-events: none;
     }
-    
+    #go,
+    #back{
+        display: block !important;
+    }
     #it1{
         --offset: 1;
     }
@@ -716,36 +637,7 @@ svg {
     .hero__infoh{
         margin-top: 12rem;
     }
-    /* FAQ */
-    .faq{
-        margin-top: 2rem;
-        padding: 0;
-    }
-    .faq__content{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .faq__multi{
-        padding: 0 2rem;
-        grid-row: 1;
-    }
-    .faq__single{
-        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-        border-radius: 0px;
-    }
-    .faq__multi_title{
-        font-size: 1.7rem;
-    }
-    .faq__single_title{
-        font-size: 2rem;
-    }
-    .faq__single__text{
-        font-size: 1.5rem;
-    }
-    .faq__title{
-        text-align: center;
-    }
+    
 }
 
 @media (max-width: 768px){

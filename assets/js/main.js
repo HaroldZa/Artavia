@@ -1,7 +1,17 @@
 
-  setTimeout(function () {
+(function () {
     window.scrollTo(0, 0);
-}, 1);
+}());
+
+var navbar = document.getElementById('navscroll');
+
+window.onscroll = function() { 
+  if (window.pageYOffset > 0) {
+      navbar.classList.add('scrolled')
+  } else {
+      navbar.classList.remove('scrolled')
+  }
+}
 
 var title = document.getElementsByClassName("footer__title_top");
 var i;
@@ -14,7 +24,6 @@ for (i = 0; i < title.length; i++) {
         this.classList.remove("active");
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
-        
         this.classList.add("active");
       }
     });

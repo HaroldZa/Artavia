@@ -8,20 +8,37 @@ var it3 = document.getElementById("it3");
 
 var array = [];
 
-const fill = () =>{
+const fill = () => {
     array = [];
-    for(let i=0; i<it1.classList.length; i++){
+    for (let i = 0; i < it1.classList.length; i++) {
         array.push(it1.classList[i]);
     }
 }
 
 fill();
 
+var startingX, startingY;
+function touchStart(evt) {
+    startingX = evt.touches[0].clientX;
+}
+function touchMove(evt) {
+    movingX = evt.touches[0].clientX;
+}
+function touchEnd() {
+    
+    if (startingX + 100 < movingX) {
+        document.getElementById('back').click();
+    } else if (startingX - 100 > movingX) {
+        document.getElementById('go').click();
+    }
+}
+
 back.addEventListener("click", function () {
     if(array.indexOf('second') > 0){
         it1.classList.add('first');
         it2.classList.add('first');
         it3.classList.add('first');
+        document.getElementById('back').style.display = 'none';
 
         it1.classList.remove('second');
         it2.classList.remove('second');
@@ -32,6 +49,7 @@ back.addEventListener("click", function () {
         it1.classList.add('second');
         it2.classList.add('second');
         it3.classList.add('second');
+        document.getElementById('go').style.display = 'block';
 
         it1.classList.remove('last');
         it2.classList.remove('last');
@@ -46,6 +64,7 @@ go.addEventListener("click", function () {
         it1.classList.add('second');
         it2.classList.add('second');
         it3.classList.add('second');
+        document.getElementById('back').style.display = 'block';
 
         it1.classList.remove('first');
         it2.classList.remove('first');
@@ -56,6 +75,7 @@ go.addEventListener("click", function () {
         it1.classList.add('last');
         it2.classList.add('last');
         it3.classList.add('last');
+        document.getElementById('go').style.display = 'none';
 
         it1.classList.remove('second');
         it2.classList.remove('second');
