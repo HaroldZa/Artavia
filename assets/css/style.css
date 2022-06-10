@@ -871,10 +871,6 @@ summary:after {
         display: none;
     }
 
-    .hero {
-        padding-top: 0;
-    }
-
     /* * MENU BUTTON */
     .menu__submenu {
         max-height: 0;
@@ -1009,7 +1005,8 @@ summary:after {
 
     .hero__info {
         width: 80%;
-        margin: 8rem auto 0 auto;
+        margin-top: 4rem !important;
+        padding-top: 0;
     }
 
     .sidenav {
@@ -1124,7 +1121,7 @@ summary:after {
     }
 
     details[open] {
-        height: 36rem;
+        height: 38rem;
     }
 }
 
