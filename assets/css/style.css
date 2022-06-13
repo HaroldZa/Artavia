@@ -131,6 +131,7 @@ img {
     transition: all .8s;
     height: 9rem;
     background-color: var(--purple);
+    padding-top: 0;
 }
 
 .hero__bar-active {
