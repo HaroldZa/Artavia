@@ -373,7 +373,9 @@
     background-image: url(../../images/bubble.png);
     background-repeat: no-repeat;
     width: 6%;
-    
+  }
+  .slick-dots li:hover{
+    transform: scale(1.05);
   }
 }
   .reviews__card {
