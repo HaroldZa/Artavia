@@ -60,22 +60,26 @@ function menu(evt, menuName) {
   cont++;
 }
 
-var r1 = document.getElementById('review1');
-var r2 = document.getElementById('review2');
+/* Slider Review */
 
-review_go.addEventListener("click", function () {
-    r1.style.display = 'none';
-    r2.style.display = 'flex';
-    r1.style.animation = 'fade_in_show 1.5s'
-    r2.style.animation = 'fade_in_show 1.5s'
-})
+$('.slider-for').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  asNavFor: '.slider-for',
+  dots: true,
+  focusOnSelect: true
+});
 
-review_back.addEventListener("click", function () {
-    r1.style.display = 'flex';
-    r2.style.display = 'none';
-    r1.style.animation = 'fade_in_show 1.5s'
-    r2.style.animation = 'fade_in_show 1.5s'
-})
+/* End Slider Review */
+
+
 function loadSlide(){
   document.getElementById('liWebsite').click();
   document.getElementById('liWebsite').click();
